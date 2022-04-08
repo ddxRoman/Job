@@ -61,9 +61,6 @@ button{
     display: grid;
     border: 1px solid rgb(0, 0, 0);
 }
-
-
-
 body{
     background-color: rgb(125, 139, 168);
 }
@@ -72,3 +69,43 @@ iframe{
     height: 95%;
     margin: 1%;
 }
+
+.lmenu button {
+ 
+    border-color: rgb(230, 153, 123);
+    border-radius: 4px;
+    background-color: rgb(63, 194, 194);
+    height: 7%;
+    width: 80%;
+    margin: 1px;
+}
+
+
+
+
+
+
+
+/* Современные браузеры
+   ----------------------------  */
+   input::placeholder {color: #8a4c4c;}
+
+   /* WebKit, Edge
+      ----------------------------  */
+   input::-webkit-input-placeholder {color: #000000;}
+   
+   /* Edge
+      ----------------------------  */
+   input::-ms-input-placeholder {color: #ff0000;}
+   
+   /* Firefox 4-18
+      ----------------------------  */
+   input:-moz-placeholder {color: #ff0000;opacity: 1;}
+   
+   /* Firefox 19+
+      ----------------------------  */
+   input::-moz-placeholder {color: #ff0000;opacity: 1;}
+   
+   /* IE 10-11
+      ----------------------------  */
+  input:-ms-input-placeholder {color: #ff0000;}
