@@ -4,7 +4,7 @@
 }
 .header{
    
-    height: 150px;
+    height: 100px;
     display: grid;
     border: 1px solid rgb(0, 0, 0);
     grid-template-columns: 1fr 2fr 1fr;
@@ -17,7 +17,7 @@ button{
     background-color: rgb(160, 233, 233);
 }
 
-.ym{
+.Right_head{
     padding: 15px; /* Надо посмотреть как делать правильно отступы на Гридах*/
     justify-content: start;
     display: grid;
@@ -33,7 +33,7 @@ button{
     width: 150px;
     height: 60px;
 }
-.autorize{
+.CSD{
     padding: 15px;/* Надо посмотреть как делать правильно отступы на Гридах*/
 }
 
@@ -41,7 +41,7 @@ button{
     display: grid;
     border: 1px solid rgb(0, 0, 0);
     grid-template-columns: 15% 60% 25%;
-    height: 350px;
+    height: 410px;
 }
 .footer{
     display: grid;
@@ -80,13 +80,28 @@ iframe{
     margin: 1px;
 }
 
+.docs{
+    height: 300px;
+    width: 100%;
+}
+
+.docs button{
+    border-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    background-color: rgb(47, 167, 36);
+    height: 15%;
+    width: 25%;
+    color: #000000;
+    margin-bottom: 3px;
+}
 
 
 
 
 
+/*  Изменение цвета текста в плейс холдере для разных браузеров.
 
-/* Современные браузеры
+Современные браузеры 
    ----------------------------  */
    input::placeholder {color: #8a4c4c;}
 

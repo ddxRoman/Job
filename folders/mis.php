@@ -21,23 +21,5 @@
     <button type="submit">GO</button>
 </a>
 </form>
-
-
-
-<script>
-function clickPreview() {
-  document.getElementById("actionName").value = "PREVIEW";
-  var form = document.getElementById("formId");
-  form.setAttribute("target", "_blank");
-  form.submit();
-}
-function clickSave() {
-  document.getElementById("actionName").value = "SAVE";
-  var form = document.getElementById("formId");
-  form.removeAttribute("target");
-  form.submit();
-}
-</script>
-
 </body>
 </html>
