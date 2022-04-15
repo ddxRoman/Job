@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image" href="pics/ICO.jpg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image" href="file/icons/general.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medcloud</title>
@@ -22,12 +24,6 @@
                     <button class="MD">MEDCLOUD</button> </a>
             </div>
             <div class="Right_head">
-                     <!-- <form action="" method="post">
-                    <input name="login" type="text" placeholder="Login"><br>
-                    <input name="password" type="password" placeholder="Password">
-                    <button type="submit">Войти</button>
-                </form> -->
-
                 Тут будут выводится данные о пользователе, сама авторизация будет происходить до входа сюда
                 </div>
         </div>
@@ -38,6 +34,7 @@
                     <a href="folders/mis.html" target="1"><button>Миски</button></a><br>
                     <a href="folders/docs.html" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.html" target="1"><button>Хелпер</button></a><br>
+                    <a href="autorization.php" target="">Uj uj uj</a>
                 </div>
             </div>
             <div class="container"> 
@@ -48,6 +45,5 @@
         </div>
         <div class="footer">Footer тут рефреш и часы</div>
     </div>
-
 </body>
 </html>

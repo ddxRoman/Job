@@ -1,12 +1,12 @@
 
 <?php
 $num=$_POST['rwk'];
-if($num!='') {
+if($num>0) {
 header('Location: https://jira.csd.com.ua/browse/MEDRWK-'.$num);
 }
 else{
 $num=$_POST['sup'];
-if($num!=''){
+if($num>0){
     
     header('Location: https://jira.csd.com.ua/browse/MEDSUP-'.$num);
 }
