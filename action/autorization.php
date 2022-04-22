@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['users']){
+if(!$_SESSION['users']){
     echo "Конфирм сработал ИФ";
 }else {
     echo"Не конфирм ЕЛСЕ сработал";

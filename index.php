@@ -19,7 +19,7 @@
       <?  require_once "folders/CSD.html";?>
             </div>
             
-            <div class="helper">
+            <div class="knowledge">
                 <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/knowledge-bases/dokumentatsiia-funktsionala" target="_blank">
                     <button class="MD">MEDCLOUD</button> </a>
             </div>
@@ -28,25 +28,29 @@
            <?php require_once'action\profile.php'?>
                 </div>
         </div>
+        <hr width="85%">
         <div class="body">
             <div class="lmenu">
                 <div class="links">
                     <a href="folders/favorites.html" target="1"><button>Избранное</button></a><br>
-                    <a href="folders/mis.html" target="1"><button>Миски</button></a><br>
                     <a href="folders/docs.html" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.html" target="1"><button>Хелпер</button></a><br>
-                    <a href="/action/autorization.php" target="">Страница авторизации</a>
+                    <a href="folders/mis.html" target="1"><button>Миски</button></a><br>
+                    <a href="/action/autorization.php" target=""><button>Авторизация</button></a>
+                    <a href="/action/checkautorization.php" target=""><button>ТЕСТ</button></a>
                 </div>
             </div>
             <div class="container"> 
                 <iframe name="1" src="">
                 </iframe>
             </div>
-            <div class="rmenu">Правое меню<br>Вероятно таск надо тулить</div>
+            <div class="rmenu"><iframe name="task" src="Taskmanager/Task.php"></iframe></div>
         </div>
         <div class="footer"> 
             <div></div>
-            <a href="/"><button>Рефреш страницы</button></a> 	
+        <div class="refresh">
+            <!-- <a href="/"><button>Рефреш<br>страницы</button></a> 	 -->
+        </div>
         <div id="clock" class="clock"></div>	
         <script src="JavaScript/clock.js"></script>
     </div>
