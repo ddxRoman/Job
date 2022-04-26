@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image" href="pics/ICO.jpg">
+  <link rel="icon" type="image" href="pics/ICO.jpg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image" href="file/icons/general.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medcloud</title>
 </head>
@@ -17,17 +17,20 @@
         <div class="header">
         <div class="CSD">
       <?  require_once "folders/CSD.html";?>
+      
             </div>
             
             <div class="knowledge">
                 <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/knowledge-bases/dokumentatsiia-funktsionala" target="_blank">
                     <button class="MD">MEDCLOUD</button> </a>
             </div>
-            <div class="Right_head">
-                
-           <?php require_once'action\profile.php'?>
+                        <div class="Right_head">
+
+           <? require_once "action\profileindex.php"; ?>
                 </div>
         </div>
+
+
         <hr width="85%">
         <div class="body">
             <div class="lmenu">
