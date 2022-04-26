@@ -4,9 +4,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #000000;
   text-align: left;
-  background-color: #fff;
+  /* background-color: rgb(255, 0, 0); */
 }
 
 *,
@@ -17,7 +17,7 @@ body {
 
 .accordion__item {
   margin-bottom: 0.5rem;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
 }
 
@@ -28,9 +28,9 @@ body {
   padding: 0.75rem 1rem;
   color: #fff;
   font-weight: 500;
-  background-color: #0d6efd;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  background-color: #6384b6;
+  /* border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; */
   cursor: pointer;
   transition: background-color 0.2s ease-out;
 }
@@ -57,20 +57,20 @@ body {
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__header {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  /* border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; */
 }
 
 .accordion__content {
   padding: 0.75rem 1rem;
   background: #fff;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  /* border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; */
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__body {
   display: none;
 }
 body{
-    background-color: aquamarine;
+    /* background-color: rgb(0, 0, 0); */
 }
