@@ -1,3 +1,4 @@
+<? require_once "../function/checkaut.php";?>
 <html>
 
 <head>

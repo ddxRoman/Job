@@ -3,7 +3,7 @@ $id=1;
 require_once '../action/connect.php';
 $res = mysqli_query($connect, "SELECT * FROM `tasks` WHERE 1");
 $tasks = mysqli_fetch_assoc($res);
-
+ require_once "../function/checkaut.php";
 
 ?>
 <!doctype html>
@@ -20,11 +20,11 @@ $tasks = mysqli_fetch_assoc($res);
     <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
         <div class="accordion__item">
             <div class="accordion__header">
-               <p class="number" > №<?php  print_r ($tasks['id']); ?> : </p>  <p class="nametasks"><?php  print_r ($tasks['name']); ?></p>
+               <p class="number" ><s> №<?php  print_r ($tasks['id']); ?> : </p>  <p class="nametasks"><?php  print_r ($tasks['name']); ?></s></p>
             </div>
             <div class="accordion__body">
                 <div class="accordion__content">
-          <?php  print_r ($tasks['contant']); ?>
+                <s> <?php  print_r ($tasks['contant']); ?></s>
                 </div>
             </div>
         </div>
@@ -54,11 +54,11 @@ $tasks = mysqli_fetch_assoc($res);
     
     <div class="accordion__item">
             <div class="accordion__header">
-            <p class="number" > №4 </p>  <p class="nametasks">Права доступа</p>
+            <p class="number" > <s><№4 </p>  <p class="nametasks">Права доступа</s></p>
             </div>
             <div class="accordion__body">
                 <div class="accordion__content">
-                Сделать доступы, по авторизации, но как? Только через if И header?
+                <s>Сделать доступы, по авторизации, но как? Только через if И header?</s>
           </div>
             </div>
         </div>

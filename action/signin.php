@@ -16,8 +16,8 @@ if(mysqli_num_rows($check_user)>0)
         "id"=>$user['id'],
         "login"=>$user['name'],
         "avatar"=>$user['avatar'],
-        "role"=>$user['role'],
-        "role"=>$user['status']
+        "status"=>$user['status'],
+        "role"=>$user['role']
     ];
      header('Location: profile2.php');
 }

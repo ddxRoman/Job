@@ -1,4 +1,9 @@
 
+<? require_once "function/checkaut.php"; require_once "function/checkrole.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +21,7 @@
     <div class="all">
         <div class="header">
         <div class="CSD">
-      <?  require_once "folders/CSD.html";?>
+      <?  require_once "folders/CSD.php";?>
       
             </div>
             
@@ -30,29 +35,35 @@
                 </div>
         </div>
 
-
         <hr width="85%">
         <div class="body">
             <div class="lmenu">
                 <div class="links">
-                    <a href="folders/favorites.html" target="1"><button>Избранное</button></a><br>
-                    <a href="folders/docs.html" target="1"><button>Доки</button></a><br>
-                    <a href="folders/helper.html" target="1"><button>Хелпер</button></a><br>
-                    <a href="folders/mis.html" target="1"><button>Миски</button></a><br>
-                    <a href="/action/autorization.php" target=""><button>Авторизация</button></a>
-                    <a href="/action/checkautorization.php" target=""><button>ТЕСТ</button></a>
+                    <a href="folders/favorites.php" target="1"><button>Избранное</button></a><br>
+                    <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
+                    <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>
+                    <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                 </div>
             </div>
-            <div class="container"> 
+            <div class="container">
                 <iframe name="1" src="">
                 </iframe>
             </div>
-            <div class="rmenu"><iframe name="task" src="Taskmanager/Task.php"></iframe></div>
+            <div class="rmenu">
+            <?php if($_SESSION['user']['status']==9){?>
+            <iframe name="task" src="Taskmanager/Task.php">
+            </iframe>
+      <?  } 
+            else{
+                ?><div class="rmenu"><iframe name="task" src=""></iframe></div>
+                <?
+                }
+            ?>
+            </div> 
         </div>
         <div class="footer"> 
             <div></div>
         <div class="refresh">
-            <!-- <a href="/"><button>Рефреш<br>страницы</button></a> 	 -->
         </div>
         <div id="clock" class="clock"></div>	
         <script src="JavaScript/clock.js"></script>
