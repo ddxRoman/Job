@@ -47,7 +47,7 @@ height: 100px;
 .body{
     display: grid;
 
-    grid-template-columns: 15% 60% 25%;
+    grid-template-columns: 13% 60% 27%;
     height: 410px;
 }
 .footer{
