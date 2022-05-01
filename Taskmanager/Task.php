@@ -1,66 +1,77 @@
-<?php
-$id=1;
-require_once '../action/connect.php';
-$res = mysqli_query($connect, "SELECT * FROM `tasks` WHERE 1");
-$tasks = mysqli_fetch_assoc($res);
- require_once "../function/checkaut.php";
-
-?>
 <!doctype html>
 <html lang="ru">
 <head>
     <link rel="stylesheet" type="text/css" href="../css/styleaccordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Taskmanager</title>
 </head>
 
 <body>
+<div class="taskheader" >
+       <a href="../folders/newTask.php"><button class="addtask" title="Добавить задачу">+</button></a> 
+    </div>
+<?php
+ require_once '../action/connect.php';
+ $product =mysqli_query($connect, "SELECT * FROM `tasks` ORDER BY `status` ASC");
+ $product=mysqli_fetch_all($product);
+ foreach($product as $products){   
+     ?>
     <script src="../JavaScript/accordion.js"></script>
     <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
         <div class="accordion__item">
-            <div class="accordion__header">
-               <p class="number" ><s> №<?php  print_r ($tasks['id']); ?> : </p>  <p class="nametasks"><?php  print_r ($tasks['name']); ?></s></p>
+                <? if($products[3]!=1){?>
+                    <div class="accordion__header">
+               <p class="number" > №  <?= $products[0]  ?> : </p>  <p class="nametasks"><?=  $products[1] ?></p>
+               <a href="../action/editTask.php?id=<?= $products[0] ?>"><img width="16px" height="16px" src="../file/icons/edit.png"></a>
             </div>
             <div class="accordion__body">
+            <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
+<select name="currency" onchange="this.form.submit()">
+<? if($product[3]==0){?>
+    <option value="3">Статус</option>
+<option value="0">Актуально</option>
+<option value="1">Закрыто</option>
+<?}
+ else{?>
+ <option value="3">Статус</option>
+<option value="1">Закрыто</option>
+<option value="0">Актуально</option>
+<?}?>
+</select>
+</form>
                 <div class="accordion__content">
-                <s> <?php  print_r ($tasks['contant']); ?></s>
-                </div>
+                <?=  $products[2] ?>
+                </div><?}
+                else{?>
+                
+                <div style="background-color:#49ad1a;" class="accordion__header">
+
+                    <p class="number" > №  <s> <?= $products[0]  ?> : </p>  <p class="nametasks"><?=  $products[1] ?></s></p>
+                    </div>
+                    <div class="accordion__body">
+                    <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
+<select name="currency" onchange="this.form.submit()">
+<? if($product[3]==0){?>
+    <option value="3">Статус</option>
+<option value="0">Актуально</option>
+<option value="1">Закрыто</option>
+<?}
+ else{?>
+ <option value="3">Статус</option>
+<option value="1">Закрыто</option>
+<option value="0">Актуально</option>
+<?}?>
+</select>
+</form>
+                        <div color="yellow" class="accordion__content_close">
+                        <?=  $products[2] ?>
+                        </div><?
+                }?>
             </div>
         </div>
-        <div class="accordion__item">
-            <div class="accordion__header">
-            <p class="number" > №2 </p> </p><p class="nametasks">Корректный вывод задач </p>
-            </div>
-            <div class="accordion__body">
-                <div class="accordion__content">
-                Сделать что бы кнопок было столько же сколько и заданий, можно получить количество строк из БД, и через цикл
-                рисовать тут блоки с заданиями
-     
-                </div>
-            </div>
-        </div>
-        <div class="accordion__item">
-            <div class="accordion__header">
-            <p class="number" > №3 </p>  <p class="nametasks">Добавление тасков</p>
-            </div>
-            <div class="accordion__body">
-                <div class="accordion__content">
-                Нужно сделать добавление тасков сюда, по форме это можно сделать, данное окно это фрейм, можно сделать кнопку
-и по этой кнопке кидать на новую страницу (Сюда же во фрейм) и в ней поля с добавлением в Базу данных
-          </div>
-            </div>
-        </div>
-    
-    <div class="accordion__item">
-            <div class="accordion__header">
-            <p class="number" > <s><№4 </p>  <p class="nametasks">Права доступа</s></p>
-            </div>
-            <div class="accordion__body">
-                <div class="accordion__content">
-                <s>Сделать доступы, по авторизации, но как? Только через if И header?</s>
-          </div>
-            </div>
+        <?}?>
         </div>
     </div>
     </div>
@@ -69,7 +80,6 @@ $tasks = mysqli_fetch_assoc($res);
             alwaysOpen: true
         });
     </script>
-
 </body>
-
 </html>
+

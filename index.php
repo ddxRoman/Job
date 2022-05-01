@@ -1,5 +1,5 @@
 
-<? require_once "function/checkaut.php"; require_once "function/checkrole.php";
+<? require_once "function/checkaut.php"; require_once "function/checkrole.php"; require_once "action/connect.php";
 
 ?>
 
@@ -17,12 +17,13 @@
     <title>Medcloud</title>
 </head>
 
+
 <body>
+    
     <div class="all">
         <div class="header">
         <div class="CSD">
       <?  require_once "folders/CSD.php";?>
-      
             </div>
             
             <div class="knowledge">
@@ -30,7 +31,6 @@
                     <button class="MD">MEDCLOUD</button> </a>
             </div>
                         <div class="Right_head">
-
            <? require_once "action\profileindex.php"; ?>
                 </div>
         </div>

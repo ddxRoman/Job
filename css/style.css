@@ -13,15 +13,11 @@ border: 1px solid rgba(255, 255, 255, 0);
     background-color: rgb(113, 130, 165);
     grid-template-columns: 23% 50% 27%;
 }
-
 button{
     border-color: rgb(187, 167, 159);
     border-radius: 15px;
     background-color: rgb(160, 233, 233);
 }
-
-
-
 .Right_head{
     padding: 5px; /* Надо посмотреть как делать правильно отступы на Гридах*/
     justify-content: start;
@@ -32,7 +28,6 @@ height: 100px;
     justify-content: center;
     align-content: center;
     display: grid;
-
 }
 .MD{
     width: 100%;
@@ -43,11 +38,10 @@ height: 100px;
 .CSD{
     padding: 15px;/* Надо посмотреть как делать правильно отступы на Гридах*/
 }
-
 .body{
     display: grid;
 
-    grid-template-columns: 13% 60% 27%;
+    grid-template-columns: 13% 57% 30%;
     height: 410px;
 }
 .footer{
@@ -66,7 +60,6 @@ height: 100px;
     border: 3px solid rgba(125, 185, 200, 0.377);
     display: grid;
     background-color: rgba(125, 155, 195, 0.466);
-
 }
 .container{
     display: grid;
@@ -81,7 +74,6 @@ iframe{
     margin: 1%;
     border: 0px;
 }
-
 .lmenu button {
  
     border-color: rgb(230, 153, 123);
@@ -91,7 +83,6 @@ iframe{
     width: 80%;
     margin: 1px;
 }
-
 .docs{
     height: 300px;
     width: 100%;
@@ -102,7 +93,6 @@ color: #ffffff;
 
     background-color: rgb(143, 150, 147);
 }
-
 .docs button{
     border-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -112,19 +102,28 @@ color: #ffffff;
     color: #000000;
     margin-bottom: 3px;
 }
-.autorize{
+.allAutorize{
     display: grid;
-    border: 1px solid rgba(196, 175, 175, 0.192);
+    justify-content: center;
+    margin-top: 5%;
+
+}
+.autorize{
+
+    display: grid;
+    border: 1px solid rgba(0, 225, 255, 0.062);
+justify-content: center;
+    height: 200px;
 
 
 }
-.GO{
+.autorize button{
+    height: 75px;
     margin-top: 5px;
-    margin-left: 20%;
-    background-color: #ff0000;
-    border: 3px solid #ffffff;
+    margin-left: 22%;
+    background-color: #589e51;
+    border: 3px solid #00fff2;
     border-radius: 40px;
-    height: 25px;
     width: 50%;
 }
 .clock{
@@ -135,29 +134,50 @@ padding: 10px;
 color: #ffffff;
 align-content: center;
 }
+textarea[name="body"]{
+    border: 1px solid rgb(0, 255, 221);
+    background-color: #eaf5e5;
+    height: 180px;
+    width: 90%;
+}
+label{
+    font-size: 12px;
+    color: rgb(37, 37, 37);
+}
+.taskadd{
+    margin: 1% 0% 0% 1%;
+}
+.return{
+    width: 24px;
+    height: 24px;
+}
+.taskheader{
+    display: grid;
+    justify-content: end;
+  }
 
 /*  Изменение цвета текста в плейс холдере для разных браузеров.
 
 Современные браузеры 
    ----------------------------  */
-   input::placeholder {color: #8a4c4c;}
+   input::placeholder {color: #444444b6;}
 
    /* WebKit, Edge
       ----------------------------  */
-   input::-webkit-input-placeholder {color: #000000;}
+   input::-webkit-input-placeholder {color: #444444b6;}
    
    /* Edge
       ----------------------------  */
-   input::-ms-input-placeholder {color: #ff0000;}
+   input::-ms-input-placeholder {color: #444444b6;}
    
    /* Firefox 4-18
       ----------------------------  */
-   input:-moz-placeholder {color: #ff0000;opacity: 1;}
+   input:-moz-placeholder {color: #444444b6;}
    
    /* Firefox 19+
       ----------------------------  */
-   input::-moz-placeholder {color: #ff0000;opacity: 1;}
+   input::-moz-placeholder {color: #444444b6;}
    
    /* IE 10-11
       ----------------------------  */
-  input:-ms-input-placeholder {color: #ff0000;}
+  input:-ms-input-placeholder {color: #444444b6;}
