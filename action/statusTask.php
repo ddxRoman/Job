@@ -8,4 +8,7 @@ mysqli_query($connect, "UPDATE `tasks` SET `Status` = '$status' WHERE `tasks`.`i
 echo $task_id. "----".$status;
  header('Location: ../Taskmanager/Task.php');
 
+$priority=$_POST['priority'];
+mysqli_query($connect, "UPDATE `tasks` SET `Priority` = '$priority' WHERE `tasks`.`id` = $task_id");
+
 ?>

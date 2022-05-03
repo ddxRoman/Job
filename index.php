@@ -43,6 +43,8 @@
                     <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
+                    <a href="https://docs.google.com/spreadsheets/d/1nWD1hnmjc_pc7LWvE3E6shFtQgtgcZKV80Tmjt4dvmM/edit#gid=0" target="_blank"><button>Задачи</button></a><br>
+                    
                 </div>
             </div>
             <div class="container">

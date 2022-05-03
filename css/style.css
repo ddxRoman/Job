@@ -115,16 +115,25 @@ color: #ffffff;
 justify-content: center;
     height: 200px;
 
-
+}
+.autorize input{
+    border: 1px solid #f19426;
+    background-color: aqua;
+}
+.allAutorize img{
+    width: 180px;
+    height: 156px;
+    margin-bottom: 30px;
+    margin-top: 70px;
 }
 .autorize button{
-    height: 75px;
-    margin-top: 5px;
-    margin-left: 22%;
-    background-color: #589e51;
-    border: 3px solid #00fff2;
-    border-radius: 40px;
-    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 7%;
+    background-color: #519e87;
+    border: 3px solid #f19426;
+    border-radius: 11pxb;
+    width: 150px;
 }
 .clock{
 display: grid;
