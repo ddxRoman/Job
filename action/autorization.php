@@ -19,15 +19,21 @@ body{
 }
 </style>
     <div class="allAutorize">
-        <img width="px" height="240px" src="../file/icons/Logo.png">
+<div class="header-autorization"></div>
     <div class="autorize">
+    <img width="px" height="240px" src="../file/icons/Logo.png">
     <form action="signin.php" method="post">
-    <input type="text" name="login" placeholder="Логин"><br>
-    <input type="password" name="password" placeholder="Пароль"><br>
+    <input required type="text" name="login" placeholder="Логин"><br>
+    <input required type="password" name="password" placeholder="Пароль"><br>
 <button type="submit">Get to work</button>
 </form>
+<div class="message">
+<p class="sms"> <?echo $_SESSION['sms']; ?> </p> 
+</div>
+<?
+unset($_SESSION['sms']);
+?>
 </div>
 </div>
-
 </body>
 </html>

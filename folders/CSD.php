@@ -15,7 +15,6 @@
     <button type="submit">GO</button>
 </a>
 </form>
-
 <form target="_blank" action="../action/header.php" method="post">
 <input type="number" name="sup" placeholder="SUP">
 <a href="header.php" > 

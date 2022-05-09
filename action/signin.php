@@ -24,8 +24,10 @@ if(mysqli_num_rows($check_user)>0)
 
 
 else {
-    echo"Есть ошибка";
-    $_SESSION['sms']='Или пароль, или логин, не понятно что.';
+
+    $_SESSION['sms']='Не верный <br> логин или пароль';
+
+    header('Location: autorization.php');
 }
 
 ?>

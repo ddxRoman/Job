@@ -1,81 +1,145 @@
-.all{
+.all {
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
 }
-div{
-border: 1px solid rgba(255, 255, 255, 0);
+
+div {
+    border: 1px solid rgba(255, 255, 255, 0);
 }
-.header{
-   margin-bottom: 10px;
+
+hr {
+    height: 20px;
+    margin: 30px auto;
+    width: 70%;
+    background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: relative;
+    border: none;
+}
+hr:before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
+}
+
+.header {
+    margin-bottom: 10px;
     height: 100px;
     display: grid;
     background-color: rgb(113, 130, 165);
     grid-template-columns: 23% 50% 27%;
 }
-button{
+
+
+button {
     border-color: rgb(187, 167, 159);
     border-radius: 15px;
     background-color: rgb(160, 233, 233);
 }
-.Right_head{
-    padding: 5px; /* Надо посмотреть как делать правильно отступы на Гридах*/
+
+button:hover {
+    border-color: rgb(153, 140, 135);
+    border-radius: 15px;
+    background-color: rgb(79, 233, 233);
+}
+
+.Right_head {
+    padding: 5px;/* Надо посмотреть как делать правильно отступы на Гридах*/
     justify-content: start;
     display: grid;
-height: 100px;
+    height: 100px;
 }
-.knowledge{
+
+.knowledge {
     justify-content: center;
     align-content: center;
     display: grid;
 }
-.MD{
+
+.MisPanel {
+    /* display: inline-block; */
+    width: 100%;
+    height: 32px;
+    justify-content: center;
+}
+
+.MD {
     width: 100%;
     height: 60px;
     font-weight: 600;
     color: #313131;
 }
-.CSD{
-    padding: 15px;/* Надо посмотреть как делать правильно отступы на Гридах*/
-}
-.body{
-    display: grid;
 
+.CSD {
+    display: grid;
+    padding: 15px;
+    /* Надо посмотреть как делать правильно отступы на Гридах*/
+}
+
+.CSD input {
+    width: 66%;
+}
+
+.body {
+    display: grid;
     grid-template-columns: 13% 57% 30%;
     height: 410px;
 }
-.footer{
+
+.footer {
     display: grid;
     align-content: center;
     height: 100px;
-    grid-template-columns:40% 20% 40%;
+    grid-template-columns: 40% 20% 40%;
     background-color: rgb(113, 130, 165);
 }
-.lmenu{
+
+.lmenu {
     background-color: rgb(125, 139, 175);
     padding: 15px;
     display: grid;
 }
-.rmenu{
+
+.rmenu {
     border: 3px solid rgba(125, 185, 200, 0.377);
     display: grid;
     background-color: rgba(125, 155, 195, 0.466);
 }
-.container{
-    display: grid;
 
+.container {
+    display: grid;
 }
-body{
+
+body {
     background-color: rgb(125, 139, 168);
 }
-iframe{
+
+iframe {
     width: 98%;
     height: 95%;
     margin: 1%;
     border: 0px;
 }
+
+.MisPanel button {
+    text-align: center;
+    border: 2px solid rgb(230, 153, 123);
+    width: 6.5%;
+    height: 80%;
+    background-color: rgb(38, 231, 231);
+}
+
+.MisPanel button:hover {
+    text-align: center;
+    border: 2px solid rgb(204, 130, 101);
+    width: 6.5%;
+    background-color: rgb(0, 255, 255);
+}
+
 .lmenu button {
- 
     border-color: rgb(230, 153, 123);
     border-radius: 4px;
     background-color: rgb(63, 194, 194);
@@ -83,17 +147,28 @@ iframe{
     width: 80%;
     margin: 1px;
 }
-.docs{
+
+.lmenu button:hover {
+    border-color: rgb(204, 130, 101);
+    border-radius: 4px;
+    background-color: rgb(40, 211, 211);
+    height: 7%;
+    width: 80%;
+    margin: 1px;
+}
+
+.docs {
     height: 300px;
     width: 100%;
     margin: 3px;
 }
-.helper button{
-color: #ffffff;
 
+.helper button {
+    color: #ffffff;
     background-color: rgb(143, 150, 147);
 }
-.docs button{
+
+.docs button {
     border-color: rgb(255, 255, 255);
     border-radius: 7px;
     background-color: rgb(47, 167, 36);
@@ -102,31 +177,42 @@ color: #ffffff;
     color: #000000;
     margin-bottom: 3px;
 }
-.allAutorize{
+
+.allAutorize {
     display: grid;
     justify-content: center;
     margin-top: 5%;
+    grid-template-rows: 10% 70% 20%;
+}
+
+.header-autorization {
+    display: grid;
 
 }
-.autorize{
+
+.autorize {
 
     display: grid;
     border: 1px solid rgba(0, 225, 255, 0.062);
-justify-content: center;
-    height: 200px;
+    justify-content: center;
+    height: 140px;
 
 }
-.autorize input{
+
+.autorize input {
+    margin-left: 2%;
     border: 1px solid #f19426;
     background-color: aqua;
 }
-.allAutorize img{
+
+.allAutorize img {
     width: 180px;
     height: 156px;
     margin-bottom: 30px;
     margin-top: 70px;
 }
-.autorize button{
+
+.autorize button {
     height: 30px;
     margin-top: 10px;
     margin-left: 7%;
@@ -135,58 +221,88 @@ justify-content: center;
     border-radius: 11pxb;
     width: 150px;
 }
-.clock{
-display: grid;
-justify-self: end;
-font-size: 35px;
-padding: 10px;
-color: #ffffff;
-align-content: center;
+
+.clock {
+    display: grid;
+    justify-self: end;
+    font-size: 35px;
+    padding: 10px;
+    color: #ffffff;
+    align-content: center;
 }
-textarea[name="body"]{
+
+textarea[name="body"] {
     border: 1px solid rgb(0, 255, 221);
     background-color: #eaf5e5;
     height: 180px;
     width: 90%;
 }
-label{
+
+label {
     font-size: 12px;
     color: rgb(37, 37, 37);
 }
-.taskadd{
+
+.taskadd {
     margin: 1% 0% 0% 1%;
 }
-.return{
+
+.return {
     width: 24px;
     height: 24px;
 }
-.taskheader{
+
+.taskheader {
     display: grid;
     justify-content: end;
-  }
+}
+
+.sms {
+    color: rgb(212, 22, 22);
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.message {
+    border: #ff0000;
+    font-weight: 800;
+}
 
 /*  Изменение цвета текста в плейс холдере для разных браузеров.
 
 Современные браузеры 
    ----------------------------  */
-   input::placeholder {color: #444444b6;}
+input::placeholder {
+    color: #444444b6;
+}
 
-   /* WebKit, Edge
+/* WebKit, Edge
       ----------------------------  */
-   input::-webkit-input-placeholder {color: #444444b6;}
-   
-   /* Edge
+input::-webkit-input-placeholder {
+    color: #444444b6;
+}
+
+/* Edge
       ----------------------------  */
-   input::-ms-input-placeholder {color: #444444b6;}
-   
-   /* Firefox 4-18
+input::-ms-input-placeholder {
+    color: #444444b6;
+}
+
+/* Firefox 4-18
       ----------------------------  */
-   input:-moz-placeholder {color: #444444b6;}
-   
-   /* Firefox 19+
+input:-moz-placeholder {
+    color: #444444b6;
+}
+
+/* Firefox 19+
       ----------------------------  */
-   input::-moz-placeholder {color: #444444b6;}
-   
-   /* IE 10-11
+input::-moz-placeholder {
+    color: #444444b6;
+}
+
+/* IE 10-11
       ----------------------------  */
-  input:-ms-input-placeholder {color: #444444b6;}
+input:-ms-input-placeholder {
+    color: #444444b6;
+}

@@ -5,7 +5,13 @@
       background-color: #16b6ae;
       border-color: rgba(120, 137, 175, 0.767);
     }
-
+    .addtask:hover{
+      border-radius: 12px;
+      height: 24px;
+        width: 24px;
+        background-color: #19ccc3;
+        border-color: rgba(214, 219, 230, 0.767);
+      }
 
 
     /* .slideThree */

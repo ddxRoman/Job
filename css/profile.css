@@ -13,6 +13,17 @@ display: grid;
     color: 888;
     size: 10px;
 } 
+.full button{
+    background-color: #ff8282da;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+.full button:hover{
+    background-color: #ff2424;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
    A {
        margin-top: -20px;
     color: rgb(255, 255, 255); /* Цвет ссылок */

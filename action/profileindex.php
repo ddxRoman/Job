@@ -45,7 +45,7 @@ if(!$_SESSION['user']){
     <div class="date">  <?=$_SESSION['user']['login']?><br>
    <font color="4C4F6B"><b><?=$_SESSION['user']['role']?></b></font>  <br></div>  
    <!-- <a href="../index.php"><button>За работу</button></a>-->
-   <a class="exit" href="action/logout.php">Выйти</a>  
+   <a class="exit" href="action/logout.php"><button>Выйти</button></a>  
     </div>
 </body>
 </html>
