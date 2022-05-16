@@ -1,73 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/styleaccordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Taskmanager</title>
 </head>
-<body>
-    <style>
-        .placeholder-form {
-	box-sizing: border-box;
-	width: 320px;
-	margin: 20px auto;
-}
-.placeholder-container {
-	position: relative;
-	width: 100%;
-	margin-bottom: 20px;
-}
-.placeholder-container input {
-	background-color: #FFF;
-	border: 2px solid #BFE2FF;
-	box-sizing: border-box;
-	color: #000;
-	font-size: 16px;
-	line-height: 16px;  
-	height: 50px;
-	outline: 0;
-	padding: 0 20px;
-	width: 100%;
-}
-.placeholder-container label {
-	color: #000;
-	font-family: Verdana, sans-serif;   
-	background-color: #FFF;
-	font-size: 16px;
-	line-height: 16px;
-	padding: 5px 10px;
-	pointer-events: none;
-	position: absolute;
-	transition: all 200ms;
-	top: 12px;
-	left: 10px;
-	background-color: #FFF;
-}
-.placeholder-container input:focus + label,
-.placeholder-container input:not(:placeholder-shown) + label{
-	top: -10px;
-	left: 10px;
-    font-size: 11px; 
-    background-color: #BFE2FF;
-	padding: 2px 10px;
-}
-    </style>
-    
 
-<div class="placeholder-form">
-    <div class="placeholder-container">
-        <input type="text" placeholder=" " />
-        <label>Фамилия</label>
+<body>
+<div class="taskheader">
+    <!------------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------->
+
+
+       <a href="../folders/newTask.php"><button class="addtask" title="Добавить задачу">+</button></a> 
     </div>
-    <div class="placeholder-container">
-        <input type="text" placeholder=" " />
-        <label>Имя</label>
+<?php
+ require_once '../action/connect.php';
+ $product =mysqli_query($connect, "SELECT * FROM `tasks` ORDER BY `status` ASC ");
+ $product=mysqli_fetch_all($product);
+ foreach($product as $products){   
+     ?>
+    <script src="../JavaScript/accordion.js"></script>
+    <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
+        <div class="accordion__item">
+                <? if($products[3]!=1){?>
+                    <div class="accordion__header">
+               <p class="number" > №  <?= $products[0]  ?> : </p>  <p class="nametasks"><?=  $products[1] ?></p>
+            </div>
+            <div class="accordion__body">
+            <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
+<select name="currency" onchange="this.form.submit()">
+<? if($product[3]!=0){ ?>
+    <option value="0">Актуально</option>
+<option value="1">Закрыто</option>
+
+<?}?>
+</select>
+<a href="../action/editTask.php?id=<?= $products[0] ?>"><img width="16px" height="16px" src="../file/icons/edit.png"></a>
+<select name="priority" onchange="this.form.submit()">
+<? if($products[5]==0){?>
+<option value="0">Backlog</option>
+<option value="1">Надо сделать</option>
+<option value="2">Нет знаний</option>
+<?
+}
+else if($products[5]==1){?>
+<option value="1">Надо сделать</option>
+<option value="0">Backlog</option>
+<option value="2">Нет знаний</option>
+<?
+}
+else if($products[5]==2){?>
+<option value="2">Нет знаний</option>
+<option value="1">Надо сделать</option>
+<option value="0">Backlog</option>
+<?
+}?>
+</select>
+<font class="owner">  <? echo $products[4];?> </font> 
+</form>
+                <div class="accordion__content">
+                <?=  $products[2] ?>
+                </div><?}
+                else{?>
+                <div style="background-color:#49ad1a;" class="accordion__header">
+                    <p class="number" > №  <s> <?= $products[0]  ?> : </p>  <p class="nametasks"><?=  $products[1] ?></s></p>
+                    </div>
+                    <div class="accordion__body">
+                    <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
+<select name="currency" onchange="this.form.submit()">
+<? if($product[3]!=0){?>
+    <option value="1">Закрыто</option>
+<option value="0">Актуально</option>
+<?}?>
+</select>
+<font class="owner">  <? echo $products[4];?> </font> 
+</form>
+                        <div color="yellow" class="accordion__content_close">
+                        <?=  $products[2] ?>
+                        </div><?
+                }?>
+            </div>
+        </div>
+        <?}?>
+        </div>
     </div>
-    <div class="placeholder-container">
-        <input type="text" placeholder=" " />
-        <label>Отчество</label>
-    </div>      
-</div>
+    </div>
+    <script>
+        new ItcAccordion(document.querySelector('.accordion'), {
+            alwaysOpen: true
+        });
+    </script>
 </body>
 </html>
+

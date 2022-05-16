@@ -21,7 +21,7 @@ body{
     <div class="allAutorize">
 <div class="header-autorization"></div>
     <div class="autorize">
-    <img width="px" height="240px" src="../file/icons/Logo.png">
+    <a href="https://github.com/ddxRoman"><img width="px" height="240px" src="../file/icons/Logo.png"></a>
     <form action="signin.php" method="post">
     <input required type="text" name="login" placeholder="Логин"><br>
     <input required type="password" name="password" placeholder="Пароль"><br>
