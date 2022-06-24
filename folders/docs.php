@@ -16,7 +16,8 @@
 <a href="../file/documents/accesses.xlsx" target="_blank"><button>Доступы</button></a>
 <a href="https://docs.google.com/spreadsheets/d/1IzxAWdmiGMHzByuBU0X5_uevGwmdO8_qxT7Ivm3piVI/edit#gid=721991591" target="_blank"><button>КНПЮМБЛ</button></a>
 
-<a href="https://app.diagrams.net/#G1jWL1rIkxZufU74CKhLBz2suGo4bmVNKN" target="1"><button>Мед. Процесс</button></a>
+<a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>ЛИС Впровадження</button></a>
+<a href="https://app.diagrams.net/#G1jWL1rIkxZufU74CKhLBz2suGo4bmVNKN" target="_blank"><button>Мед. Процесс</button></a>
 
 
 </div>

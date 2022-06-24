@@ -31,10 +31,13 @@ require_once "action/connect.php";
         </div> 
         <div class="MisPanel">
             <a href="http://crm.newdiagnostics.ua/" target="_blank"><button>ND</button></a>
-            <a href="https://mis.revmo.zp.ua/" target="_blank"><button>Revmo</button></a>
             <a href="https://lis.knpumbl.medcloud.pro/" target="_blank"><button>KNPUMBL</button></a>
-            <a href="https://miskbp.medcloud.pro/" target="_blank"><button>Medlab</button></a>
-            <a href="https://mis.verde.com.ua/" target="_blank"><button>VERDE</button></a>
+            <a href="https://miskbp.medcloud.pro/" target="_blank"><button>Medlab</button></a> 
+            <a href="https://medcloud.astra-dia.ua/" target="_blank"><button>ASTRA</button></a>
+            <a href="https://mis.mediland.com.ua/" target="_blank"><button>mediLAND</button></a>
+            <a href="https://mis.revmo.zp.ua/" target="_blank"><button>Revmo</button></a>
+
+            
         </div>
         <hr class="misPanel-hr" width="85%">
         <div class="body">
@@ -43,6 +46,8 @@ require_once "action/connect.php";
                     <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
+
+                    <a href="https://drive.google.com/drive/folders/1qsLCeBDutlGuMfTqMoVAyzQQkY1jCHwH" target="_blank"><button>Доки</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1nWD1hnmjc_pc7LWvE3E6shFtQgtgcZKV80Tmjt4dvmM/edit#gid=0" target="_blank"><button>Задачи</button></a><br>
                 </div>
             </div>
@@ -64,7 +69,7 @@ require_once "action/connect.php";
         </div>
         <hr class="footer-hr">
         <div class="footer">
-        <a href="Taskmanager/Test.php">  <div></div></a>
+        <a href="Taskmanager/Test.php" target="_blank">  <div></div></a>
             <div class="refresh">
             </div>
             <div id="clock" class="clock"></div>

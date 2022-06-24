@@ -25,6 +25,10 @@
 	width: 100px;
   }
   #navbar a:hover {
+	  bac
 	border-radius: 10px 5px;
 	background-color: #2664d625;
+  }
+  body{
+	background: linear-gradient(45deg, #b85615, #C5DDE8);
   }
