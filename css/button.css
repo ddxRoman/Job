@@ -2,69 +2,105 @@
     border-radius: 12px;
     height: 24px;
       width: 24px;
-      background-color: #16b6ae;
+      /* background-color: #16b6ae; */
       border-color: rgba(120, 137, 175, 0.767);
     }
     .addtask:hover{
       border-radius: 12px;
       height: 24px;
         width: 24px;
-        background-color: #19ccc3;
+        /* background-color: #19ccc3; */
         border-color: rgba(214, 219, 230, 0.767);
       }
 
 
-    /* .slideThree */
-.slideThree {
-  width: 80px;
-  height: 26px;
-  background: #333;
-  margin: 20px auto;
-  position: relative;
-  border-radius: 50px;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+button{
+  background-color: #20a3d657;
 }
-.slideThree:after {
-  content: 'OFF';
-  color: #000;
-  position: absolute;
-  right: 10px;
-  z-index: 0;
-  font: 12px/26px Arial, sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+
+.helper button {
+  color: #ffffff;
+  /* background-color: rgb(143, 150, 147); */
 }
-.slideThree:before {
-  content: 'ON';
-  color: #27ae60;
-  position: absolute;
-  left: 10px;
-  z-index: 0;
-  font: 12px/26px Arial, sans-serif;
-  font-weight: bold;
+
+.docs button {
+  border-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  /* background-color: rgb(134, 185, 129); */
+  height: 15%;
+  width: 25%;
+  color: #000000;
+  margin-bottom: 3px;
 }
-.slideThree label {
-  display: block;
-  width: 34px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  z-index: 1;
-  background: #fcfff4;
-  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  border-radius: 50px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+.lmenu button {
+  border-color: rgb(230, 153, 123);
+  border-radius: 4px;
+  /* background-color: rgb(63, 194, 194); */
+  /* height: 7%; */
+  min-width: 80%;
+  margin: 1px;
+  padding: 3px;
 }
-.slideThree input[type=checkbox] {
-  visibility: hidden;
+
+.lmenu button:hover {
+  border-color: rgb(204, 130, 101);
+  border-radius: 4px;
+  /* background-color: rgb(40, 211, 211); */
+  /* height: 7%; */
+  min-width: 80%;
+  margin: 1px;
+  padding: 3px;
 }
-.slideThree input[type=checkbox]:checked + label {
-  left: 43px;
+
+.MisPanel button {
+    display: inline;
+    text-align: center;
+    border-color: rgb(230, 153, 123);
+    min-width: 6.5%;
+    /* background-color: rgba(38, 192, 231, 0.178); */
+    padding: 2px;
+}
+
+.MisPanel button:hover {
+    text-align: center;
+    border-color:rgb(214, 118, 81);
+    min-width: 6.5%;
+    /* background-color: rgba(38, 192, 231, 0.288); */
+    padding: 2px;
+}
+
+button {
+  border-color: rgb(187, 167, 159);
+  border-radius: 15px;
+  /* background-color: rgb(160, 233, 233); */
+}
+
+button:hover {
+  border-color: rgb(153, 140, 135);
+  border-radius: 15px;
+  /* background-color: rgb(79, 233, 233); */
+}
+
+.autorize button {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 7%;
+  background-color: #519e87;
+  border-color: #f19426;
+  border-radius: 11px;
+  width: 150px;
+}
+
+.autorize button:hover {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 7%;
+  background-color: #1dd8a0;
+  border-color: #c2863c;
+  border-radius: 11px;
+  width: 150px;
 }
 
 /* end .slideThree */

@@ -61,7 +61,7 @@ else if($products[5]==2){?>
                 <?=  $products[2] ?>
                 </div><?}
                 else{?>
-                <div style="background-color:#49ad1a;" class="accordion__header">
+                <div style="background-color:#9194A1;" class="accordion__header">
                     <p class="number" > №  <s> <?= $products[0]  ?> : </p>  <p class="nametasks"><?=  $products[1] ?></s></p>
                     </div>
                     <div class="accordion__body">

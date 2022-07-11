@@ -11,6 +11,7 @@ require_once "action/connect.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image" href="file/icons/general.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medcloud</title>
 </head>
@@ -30,13 +31,10 @@ require_once "action/connect.php";
             </div>
         </div> 
         <div class="MisPanel">
-            <a href="http://crm.newdiagnostics.ua/" target="_blank"><button>ND</button></a>
-            <a href="https://lis.knpumbl.medcloud.pro/" target="_blank"><button>KNPUMBL</button></a>
-            <a href="https://miskbp.medcloud.pro/" target="_blank"><button>Medlab</button></a> 
-            <a href="https://medcloud.astra-dia.ua/" target="_blank"><button>ASTRA</button></a>
-            <a href="https://mis.mediland.com.ua/" target="_blank"><button>mediLAND</button></a>
-            <a href="https://mis.revmo.zp.ua/" target="_blank"><button>Revmo</button></a>
-
+        <a href="https://lis.knpumbl.medcloud.pro/" target="_blank"><button>KNPUMBL</button></a>
+        <a href="https://docs.google.com/spreadsheets/d/1nWD1hnmjc_pc7LWvE3E6shFtQgtgcZKV80Tmjt4dvmM/edit#gid=0" target="_blank"><button>Задачи</button></a>
+        <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
+        <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit#gid=0" target="_blank"><button>ЧекЛист</button></a>
             
         </div>
         <hr class="misPanel-hr" width="85%">
@@ -46,9 +44,9 @@ require_once "action/connect.php";
                     <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
-
-                    <a href="https://drive.google.com/drive/folders/1qsLCeBDutlGuMfTqMoVAyzQQkY1jCHwH" target="_blank"><button>Доки</button></a><br>
-                    <a href="https://docs.google.com/spreadsheets/d/1nWD1hnmjc_pc7LWvE3E6shFtQgtgcZKV80Tmjt4dvmM/edit#gid=0" target="_blank"><button>Задачи</button></a><br>
+                    <a href="https://drive.google.com/drive/folders/1qsLCeBDutlGuMfTqMoVAyzQQkY1jCHwH" target="_blank"><button>Доки папка</button></a><br>
+                    <a href="https://drive.google.com/drive/folders/18AlQjy7OemvXCSv0E2XLp8KGJYvkrsIQ" target="_blank"><button>Анализаторы
+                    </button></a><br>
                 </div>
             </div>
             <div class="container">

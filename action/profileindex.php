@@ -29,7 +29,6 @@ if(!$_SESSION['user']){
 }else{
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,11 +40,12 @@ if(!$_SESSION['user']){
 </head>
 <body>
     <div class="full">
-   <div class="Ava"><img src="<?=$_SESSION['user']['avatar']?>" width="100%"></div>
-    <div class="date">  <?=$_SESSION['user']['login']?><br>
-   <font color="4C4F6B"><b><?=$_SESSION['user']['role']?></b></font>  <br></div>  
-   <!-- <a href="../index.php"><button>За работу</button></a>-->
-   <a class="exit" href="action/logout.php"><button>Выйти</button></a>  
+   
+    <div class="date"> <?=$_SESSION['user']['login']?>
+   <font color="4C4F6B"><b><?=$_SESSION['user']['role']?></b></font><br><br>
+   <a class="exit" href="action/logout.php"><button>Выйти</button></a>  </div> 
+   <div class="Ava"><img src="<?=$_SESSION['user']['avatar']?>" width="100%"></div> 
+   
     </div>
 </body>
 </html>

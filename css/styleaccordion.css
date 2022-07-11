@@ -26,7 +26,7 @@ body {
   padding: 0.05rem;
   color: #fff;
   font-weight: 500;
-  background-color: #74b663;
+  background-color: #ffffff;
   cursor: pointer;
   transition: background-color 0.2s ease-out;
   height: 25px;
@@ -41,7 +41,7 @@ body {
   padding: 0.05rem;
   color: #fff;
   font-weight: 500;
-  background-color: #6384b6;
+  background-color: rgba(240, 184, 82, 0.507);
   cursor: pointer;
   transition: background-color 0.2s ease-out;
   height: 25px;
@@ -65,7 +65,7 @@ body {
 }
 
 .accordion__header:hover {
-  background-color: #0b5ed7;
+  background-color: #8587ff;
   height: 27px;
 }
 .accordion__item:not(.accordion__item_show) .accordion__header {
