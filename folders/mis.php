@@ -19,6 +19,8 @@
             <a href="https://mis.mediland.com.ua/" target="_blank"><button>mediLAND</button></a>
             <a href="https://mis.revmo.zp.ua/" target="_blank"><button>Revmo</button></a>
             <a href="https://study.helsi.pro/" target="_blank"><button>HelsiPro</button></a>
+            <a href="https://dev7-analizi-mis.bizonoff-dev.net/" target="_blank"><button>DEV7</button></a>
+            
 <!--<a href="" target="_blank"><button></button></a>
 <a href="" target="_blank"><button></button></a>
 <a href="" target="_blank"><button></button></a>

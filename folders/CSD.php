@@ -10,7 +10,7 @@
 </head>
 <body>
 <form target="_blank" action="../action/header.php" method="post">
-<input type="number" name="sup" placeholder="SUP">
+<input type="number" name="sup" placeholder="Helsi">
 <a href="header.php" > 
     <button type="submit">GO</button>
 </a>
