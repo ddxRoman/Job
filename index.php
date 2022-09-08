@@ -35,6 +35,8 @@ require_once "action/connect.php";
         <a href="https://docs.google.com/document/d/1XG_GLM7O2o95q02mmyiOGVMFOT9togEHu0RV7xvmU8g/edit" target="_blank"><button>Инструкция</button></a>
         <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
         <a href="https://study.helsi.pro/" target="_blank"><button>ХелсиТест</button></a>
+        <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
+
     </div>
         <hr class="misPanel-hr" width="85%">
         <div class="body">
@@ -42,11 +44,11 @@ require_once "action/connect.php";
                 <div class="links">
                     <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>
+                    <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>
+                    <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
-                    <a href="https://drive.google.com/drive/folders/1qsLCeBDutlGuMfTqMoVAyzQQkY1jCHwH" target="_blank"><button>Доки папка</button></a><br>
-                    <a href="https://drive.google.com/drive/folders/18AlQjy7OemvXCSv0E2XLp8KGJYvkrsIQ" target="_blank"><button>Анализаторы</button></a><br>
-                    <a href=" https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button>МояДока</button></a><br>
-                   
+                    <a href="https://docs.google.com/spreadsheets/d/1NfndicVea-VHRsdQBzZtBHAiQFsy-qO1WTPiGBF8jVo/edit#gid=1861358479" target="_blank"><button class="document">БАГИ</button></a><br>
+
                 </div>
             </div>
             <div class="container">

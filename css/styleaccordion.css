@@ -15,7 +15,6 @@ body {
 }
 
 .accordion__item {
-
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
 }
 
@@ -41,7 +40,7 @@ body {
   padding: 0.05rem;
   color: #fff;
   font-weight: 500;
-  background-color: rgba(240, 184, 82, 0.507);
+  background-color: rgba(238, 192, 106, 0.507);
   cursor: pointer;
   transition: background-color 0.2s ease-out;
   height: 25px;
@@ -68,6 +67,7 @@ body {
   background-color: #8587ff;
   height: 27px;
 }
+
 .accordion__item:not(.accordion__item_show) .accordion__header {
    border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem; 

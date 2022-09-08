@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
 </head>
 <div class="helper">
 <div class="helperSearch">
@@ -14,7 +15,6 @@
 </a>
 </form>
         </div>
-    
     <div class="link">
 <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud"
         target="_blank"><button>Board</button></a>
