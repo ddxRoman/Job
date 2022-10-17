@@ -18,8 +18,8 @@
     <div class="link">
 <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud"
         target="_blank"><button>Board</button></a>
-    <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/medcloud-support"
-        target="_blank"><button>Support</button></a>
+    <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/knowledge-bases/dokumentatsiia-funktsionala"
+        target="_blank"><button>Helper</button></a>
         </div>
 
 

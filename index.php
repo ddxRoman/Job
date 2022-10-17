@@ -17,13 +17,13 @@ require_once "action/connect.php";
 </head>
 
 <body>
-    <div class="all">
-        <div class="header">
-            <div class="CSD">
-                <? require_once "folders/CSD.php"; ?>
+    <div class="all"><!-- Общий блок на всю страницу-->
+        <div class="header"> <!-- Общий Блок на шапку-->
+            <div class="CSD"> <!-- Блок С полями в левом верхнем углу-->
+            <? require_once "folders/CSD.php"; ?> <!-- Подключение файла в котором поля с нашими заказами-->
             </div>
-            <div class="knowledge">
-                <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/knowledge-bases/dokumentatsiia-funktsionala" target="_blank">
+            <div class="knowledge"><!--  Просто кнопка на Хелпер -->
+                <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud?display=list&by_desc=true&create=true" target="_blank">
                     <button class="MD">MEDCLOUD</button> </a>
             </div>
             <div class="Right_head">
@@ -31,12 +31,10 @@ require_once "action/connect.php";
             </div>
         </div> 
         <div class="MisPanel">
-        <a href="   https://docs.google.com/document/d/14qUnHAUOo6gIP_w40ezxyS4nakGHloNC3uOmWgmvruY/edit?disco=AAAAc2LxseQ" target="_blank"><button>Инструкция Внедрения</button></a>
-        <a href="https://docs.google.com/document/d/1XG_GLM7O2o95q02mmyiOGVMFOT9togEHu0RV7xvmU8g/edit" target="_blank"><button>Инструкция</button></a>
         <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
-        <a href="https://study.helsi.pro/" target="_blank"><button>ХелсиТест</button></a>
+        <a href="https://mail.google.com" target="_blank"><button>Почта</button></a>
         <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
-
+        <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=0" target="_blank"><button>Шорт Аналики</button></a>
     </div>
         <hr class="misPanel-hr" width="85%">
         <div class="body">
