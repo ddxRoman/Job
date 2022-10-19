@@ -35,7 +35,7 @@ width: 32%;
     margin-bottom: 10px;
     height: 90px;
     display: grid;
-    background-color: rgb(234, 236, 240);
+    background-color: rgb(230, 230, 230);
     grid-template-columns: 23% 50% 27%;
 }
 
@@ -82,7 +82,7 @@ width: 32%;
 }
 
 .lmenu {
-    background-color: rgb(230, 230, 230);
+    /* background-color: rgb(230, 230, 230); */
     padding: 15px;
     display: grid;
 }
@@ -90,7 +90,7 @@ width: 32%;
 .rmenu {
     border: 3px solid rgba(125, 185, 200, 0.377);
     display: grid;
-    background-color: rgba(230, 230, 230);
+    /* background-color: rgba(230, 230, 230); */
 }
 
 .container {
@@ -98,7 +98,7 @@ width: 32%;
 }
 
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(220, 220, 240);
 }
 
 .folders{
@@ -157,7 +157,7 @@ iframe {
     height: 45px;
     grid-template-rows: 1fr;
     grid-template-columns: 40% 20% 40%;
-    background-color: rgb(230, 230, 230);
+    /* background-color: rgb(230, 230, 230); */
 }
 
 .clock {
