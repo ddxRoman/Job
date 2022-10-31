@@ -1,4 +1,5 @@
-<? require_once "function/checkaut.php";
+<?
+require_once "function/checkaut.php";
 require_once "function/checkrole.php";
 require_once "action/connect.php";
 ?>
@@ -23,14 +24,14 @@ require_once "action/connect.php";
             <? require_once "folders/CSD.php"; ?> <!-- Подключение файла в котором поля с нашими заказами-->
             </div>
             <div class="knowledge"><!--  Просто кнопка на Хелпер -->
-                <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud?display=list&by_desc=true&create=true" target="_blank">
-                    <button class="MD">MEDCLOUD</button> </a>
-            </div>
-            <div class="Right_head">
-                <? require_once "action\profileindex.php"; ?>
-            </div>
-        </div> 
-        <div class="MisPanel">
+                <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud?display=list&by_desc=true&create=true" target="_blank"><!--  Просто кнопка на Хелпер -->
+                    <button class="MD">MEDCLOUD</button> </a><!--  Просто кнопка на Хелпер -->
+            </div><!--  Просто кнопка на Хелпер -->
+            <div class="Right_head"><!-- Правый верхний блок с профилем-->
+                <? require_once "action\profileindex.php"; ?> <!-- Просто подключение другого файла в этот блок-->
+            </div><!-- Правый верхний блок с профилем-->
+        </div> <!-- Конец хедера-->
+        <div class="MisPanel"><!-- Тут начинает МИС панель.-->
         <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
         <a href="https://mail.google.com" target="_blank"><button>Почта</button></a>
         <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
@@ -46,33 +47,34 @@ require_once "action/connect.php";
                     <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1NfndicVea-VHRsdQBzZtBHAiQFsy-qO1WTPiGBF8jVo/edit#gid=1861358479" target="_blank"><button class="document">БАГИ</button></a><br>
-
                 </div>
             </div>
             <div class="container">
                 <iframe name="1" src="">
                 </iframe>
             </div>
-            <div class="rmenu">
+            
                 <?php if ($_SESSION['user']['status'] == 9) { ?>
+                    <div class="rmenu">
                     <iframe name="task" src="Taskmanager/Task.php">
                     </iframe>
+                    </div>
                 <?  } else {
-
-                ?><div class="rmenu"><iframe name="" src=""></iframe></div>
+                ?><div class="not-visible-rmenu"><iframe name="" src=""></iframe></div>
                 <?
                 }
                 ?>
-            </div>
+            <!-- </div> -->
         </div>
         <hr class="footer-hr">
         <div class="footer">
-        <a href="Taskmanager/Test.php" target="_blank">  <div></div></a>
+        <a href="Taskmanager/Task.php" target="_blank">  <div></div></a>
             <div class="refresh">
+                <a href="/Taskmanager/Test.php"><img src="file\icons\test.png" alt="test"></a>
             </div>
-            <div id="clock" class="clock"></div>
-            <script src="JavaScript/clock.js"></script>
-        </div>
+            <div id="clock" class="clock"></div><!-- ЧАСЫ-->
+            <script src="JavaScript/clock.js"></script> <!-- Подключение файла с часами-->
+        </div><!-- ЧАСЫ-->
     </div>
 </body>
 </html>

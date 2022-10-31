@@ -19,7 +19,8 @@ if(mysqli_num_rows($check_user)>0)
         "status"=>$user['status'],
         "role"=>$user['role']
     ];
-     header('Location: profile2.php');
+    //  header('Location: profile2.php');
+    header('Location: ../index.php');
 }
 
 

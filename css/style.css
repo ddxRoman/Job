@@ -5,8 +5,8 @@
 
 }
 
-div {
-    border: 1px solid rgba(255, 255, 255, 0.021);
+div { /* Границы всех Дивов что тольео есть*/
+    border: 2px solid rgba(255, 0, 0, 0);
 }
 
 .footer-hr{
@@ -31,13 +31,47 @@ width: 32%;
     border: none;
 }
 
+
+.header_no_rules {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 10px;
+    padding-top: 2%;
+    height: 90px;
+    background-color: rgba(220, 220, 235, 0.603);
+    position: relative;
+    width: 100%;
+}
+
+.relogin{
+    display: grid;
+    justify-items: end;
+}
+
+.no_rules_choice{
+    display: grid;
+    grid-template-columns: 40% 10% 10% 40%;
+    height: 5%;
+    /* align-items: center; */
+    justify-content: start;
+}
+
 .header {
     margin-bottom: 10px;
     height: 90px;
     display: grid;
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(220, 220, 235, 0.247);
     grid-template-columns: 23% 50% 27%;
 }
+
+body {
+     background-color: rgba(173, 173, 189, 0.596);
+}
+
+.iframe-body{
+    background-color: rgba(255, 255, 255, 0);
+ }
+
 
 .Right_head {
     /* padding: 5px;Надо посмотреть как делать правильно отступы на Гридах */
@@ -59,7 +93,7 @@ width: 32%;
     justify-content: center;
 }
 
-.MD {
+.MD {/*шрифт в кнопке медклауд*/
     width: 100%;
     height: 60px;
     font-weight: 600;
@@ -88,7 +122,7 @@ width: 32%;
 }
 
 .rmenu {
-    border: 3px solid rgba(125, 185, 200, 0.377);
+    border: 3px solid rgba(0, 204, 255, 0.377);
     display: grid;
     /* background-color: rgba(230, 230, 230); */
 }
@@ -97,8 +131,14 @@ width: 32%;
     display: grid;
 }
 
-body {
-    background-color: rgb(220, 220, 240);
+.no_rules_pictures{
+    display: grid;
+    justify-content: center;
+}
+
+.no_rules_pictures img{
+    width: 100%;
+    height: 100%;
 }
 
 .folders{
@@ -167,10 +207,13 @@ iframe {
     padding-right: 10px;
     color: #5a5a5a;
 }
+.refresh{
+    justify-self: center;
+}
 
-.refresh {
-    width: 100%;
-    height: 100%;
+.refresh img{
+    width: 60px;
+    height: 60px;
 }
 
 textarea[name="body"] {
@@ -209,6 +252,13 @@ label {
 a{
     text-decoration: none;
 }
+
+.No_rules_plz_autorization{
+    color: #f12626;
+    font-size: large;
+    text-align: center;
+}
+
 
 /*  Изменение цвета текста в плейс холдере для разных браузеров.
 

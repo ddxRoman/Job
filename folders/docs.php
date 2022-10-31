@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documents</title>
 </head>
-
+<body class="iframe-body">
     <div class="folders">
     <a href="../file/documents/accesses.xlsx" target="_blank"><button>Доступы</button></a>
     <a href="https://miswiki.atlassian.net/wiki/spaces/LAB/pages/3733848080/Sprint+Goals+3+02.09.22-22.09.22" target="_blank"><button>СПРИНТЫ</button></a>
@@ -18,7 +18,6 @@
     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button>МояДока</button></a>
     <a href="https://docs.google.com/spreadsheets/d/15FS6sJC2ADPFrmeqwfog1LjkerQM9W8bh7Lq1JgQ08U/edit#gid=691924434" target="_blank"><button>Инструкция внедрения</button></a>
     <a href="https://docs.google.com/document/d/14qUnHAUOo6gIP_w40ezxyS4nakGHloNC3uOmWgmvruY/edit?disco=AAAAc2LxseQ" target="_blank"><button>Инстр Внедрения</button></a>
-        <a href="https://docs.google.com/document/d/1XG_GLM7O2o95q02mmyiOGVMFOT9togEHu0RV7xvmU8g/edit" target="_blank"><button>Инструкция</button></a>
-</div>
-
+    <a href="https://docs.google.com/document/d/1XG_GLM7O2o95q02mmyiOGVMFOT9togEHu0RV7xvmU8g/edit" target="_blank"><button>Инструкция</button></a>
+</div> </body>
 </html>

@@ -1,11 +1,8 @@
 <?php
 session_start();
 
-header ('Location: ../index.php');
+// header ('Location: ../index.php');
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,12 +13,15 @@ header ('Location: ../index.php');
     <title>Profile</title>
 </head>
 <body>
-    <div class="full">
-   <div class="Ava"><img src="<?=$_SESSION['user']['avatar']?>" width="100%"></div>
-    <div class="date">  <?=$_SESSION['user']['login']?><br>
-   <font color="4C4F6B"><b><?=$_SESSION['user']['role']?></b></font>  <br></div>  
-   <!-- <a href="../index.php"><button>За работу</button></a>
-   <a href="action/logout.php"><button>Exit</button></a>  -->
+    <div class="full_profile_page">
+   <div class="Ava_profile_page"><img src="<?=$_SESSION['user']['avatar']?>">
+   <div class="edit_profile"><button type="file" name="avatar"><img src="../file/icons/ava_logo.png"></a></button></div></div>
+    <div class="date_profile_page">  <?=$_SESSION['user']['login']?><br>
+   <font color="4C4F6B"><b><?=$_SESSION['user']['role']?></b></font>  <br><br></div>  
+  <div><a href="../index.php"><button>За работу</button></a></div>
     </div>
 </body>
 </html>
+
+
+        

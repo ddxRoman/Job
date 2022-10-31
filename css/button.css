@@ -19,6 +19,11 @@ button{
   background-color: #20a3d657;
 }
 
+.no_rules_choice button{
+  height: 50px;
+  width: 100px;
+}
+
 .helper button {
   color: #000000;
   /* background-color: rgb(143, 150, 147); */
