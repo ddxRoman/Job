@@ -2,7 +2,8 @@
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
-
+    height: 100%;
+    grid-template-rows: 11% 4% 2% 68% 15%;
 }
 
 div { /* Границы всех Дивов что тольео есть*/
@@ -112,7 +113,7 @@ body {
 .body {
     display: grid;
     grid-template-columns: 13% 57% 30%;
-    height: 390px;
+    height: 100%;
 }
 
 .lmenu {
@@ -124,6 +125,7 @@ body {
 .rmenu {
     border: 3px solid rgba(0, 204, 255, 0.377);
     display: grid;
+    height: 100%;
     /* background-color: rgba(230, 230, 230); */
 }
 
@@ -194,7 +196,10 @@ iframe {
 .footer {
     display: grid;
     align-content: center;
+    position: absolute;
+    bottom: 10;
     height: 45px;
+    width: 80%;
     grid-template-rows: 1fr;
     grid-template-columns: 40% 20% 40%;
     /* background-color: rgb(230, 230, 230); */
