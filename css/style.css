@@ -2,17 +2,19 @@
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
-    height: 100%;
-    grid-template-rows: 11% 4% 2% 68% 15%;
+    /* height: 100%; */
+    grid-template-rows: 13% 5% 3% 67% 2% 35%;
 }
 
 div { /* Границы всех Дивов что тольео есть*/
-    border: 2px solid rgba(255, 0, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0);
 }
 
 .footer-hr{
     width: 113%;
     margin-left: -7%;
+    display: grid;
+    margin-top: 1%;
 }
 
 .helperSearch input{
@@ -24,21 +26,22 @@ width: 32%;
 }
 
 .misPanel-hr {
-    height: 15px;
-    margin: 3px auto;
+    display: grid;
+    /* height: 15px; */
+    margin: 3px 5px;
     width: 85%;
     background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     position: relative;
     border: none;
+    
 }
-
 
 .header_no_rules {
     display: grid;
     grid-template-columns: 100%;
     margin-bottom: 10px;
     padding-top: 2%;
-    height: 90px;
+    /* height: 90px; */
     background-color: rgba(220, 220, 235, 0.603);
     position: relative;
     width: 100%;
@@ -58,14 +61,15 @@ width: 32%;
 }
 
 .header {
-    margin-bottom: 10px;
-    height: 90px;
+    /* margin-bottom: 10px; */
+    /* height: 90px; */
     display: grid;
     background-color: rgba(220, 220, 235, 0.247);
     grid-template-columns: 23% 50% 27%;
 }
 
 body {
+    display: grid;
      background-color: rgba(173, 173, 189, 0.596);
 }
 
@@ -75,10 +79,9 @@ body {
 
 
 .Right_head {
-    /* padding: 5px;Надо посмотреть как делать правильно отступы на Гридах */
     justify-content: end;
     display: grid;
-    height: 100%;
+    height: 80%;
 }
 
 .knowledge {
@@ -86,12 +89,14 @@ body {
     align-content: center;
     display: grid;
     height: 100%;
+    width: auto;
 }
 
 .MisPanel {
     width: 100%;
-    height: 32px;
+    /* height: 32px; */
     justify-content: center;
+    padding-top: 0.3%;
 }
 
 .MD {/*шрифт в кнопке медклауд*/
@@ -103,11 +108,13 @@ body {
 
 .CSD {
     display: grid;
-    padding: 15px;
+    padding: 2%;
+    height: 80%;
 }
 
 .CSD input {
-    width: 66%;
+    width: 60%;
+    height: 75%;
 }
 
 .body {
@@ -199,7 +206,7 @@ iframe {
     position: absolute;
     bottom: 10;
     height: 45px;
-    width: 80%;
+    width: 90%;
     grid-template-rows: 1fr;
     grid-template-columns: 40% 20% 40%;
     /* background-color: rgb(230, 230, 230); */

@@ -73,6 +73,7 @@ button{
     text-align: center;
     border-color: rgb(230, 153, 123);
     min-width: 6.5%;
+
     /* background-color: rgba(38, 192, 231, 0.178); */
     padding: 2px;
 }

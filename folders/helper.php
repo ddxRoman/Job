@@ -10,8 +10,15 @@
 <div class="helperSearch">
             
         <form target="_blank" action="../action/helper.php" method="post">
-<input type="number" name="ticket" placeholder="Ticket">
+<input type="number" name="ticket" placeholder="Helper Ticket">
 <a href="header.php"> 
+    <button type="submit">GO</button>
+</a>
+</form>
+<form target="_blank" action="../action/jiraCSD.php" method="post">
+<label>Минусовое значение это SUP</label><br>
+<input type="number" name="ticketJira"  placeholder="Jira Ticket">
+<a href="jiraCSD.php"> 
     <button type="submit">GO</button>
 </a>
 </form>

@@ -15,7 +15,7 @@ margin-top: -1px;
 
 .date{
     display: grid;
-    align-content: center;
+    align-content: end;
     justify-items: end;
     width: 110px;
 }
@@ -45,7 +45,6 @@ font-size: 12px;
 }
 
    A {
-       margin-top: -20px;
     color: rgb(255, 0, 0); /* Цвет ссылок */
     font-weight: 600;
     font-size: 13px;
@@ -62,13 +61,23 @@ font-size: 12px;
    .full_profile_page{
     display: grid;
 justify-content: center;
-grid-template-columns: 38%
+grid-template-columns: 38%;
+   height:10%;
    }
    .Ava_profile_page{
    width: 100%;
    display: grid;
    justify-content: center;
+   height: auto;
 }
+
+    .Ava_profile_page img{
+   width: 100%;
+   display: grid;
+   justify-content: center;
+   height: auto;
+}
+
 .img{
     width: 252px;
 
@@ -78,6 +87,11 @@ grid-template-columns: 38%
     margin-right: 5px;
     margin-top: -45px;
 }
+/* .edit_profile img{
+    display: grid;
+    margin-right: 5px;
+    margin-top: -45px;
+} */
 .date_profile_page{
     font-size: 22px;
     font-weight: 900;

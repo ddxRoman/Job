@@ -102,6 +102,7 @@ body {
   display: grid;
   justify-content: end;
 }
+
 .owner{
   font-weight: 600;
   color: #914a4a;

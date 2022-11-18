@@ -16,7 +16,7 @@
 </a>
 </form>
 <form target="_blank" action="../action/header.php" method="post">
-<input type="number" name="rwk" placeholder="RWK">
+<input type="number" name="rwk" placeholder="Client">
 <a href="header.php" > 
     <button type="submit">GO</button>
 </a>
