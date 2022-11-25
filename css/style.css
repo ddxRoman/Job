@@ -214,11 +214,13 @@ iframe {
 
 .clock {
     display: grid;
+    vertical-align: middle;
     justify-self: end;
-    font-size: 35px;
+    font-size: 35pt;
     padding-right: 10px;
     color: #5a5a5a;
 }
+
 .refresh{
     justify-self: center;
 }
@@ -270,7 +272,13 @@ a{
     font-size: large;
     text-align: center;
 }
-
+.ink{
+   text-align: center;
+}
+.ink img{
+    width: 24px;
+    height: 24px;
+}
 
 /*  Изменение цвета текста в плейс холдере для разных браузеров.
 

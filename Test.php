@@ -31,7 +31,7 @@ require_once "action/connect.php";
                 <!--  Просто кнопка на Хелпер -->
                 <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud?display=list&by_desc=true&create=true" target="_blank">
                     <!--  Просто кнопка на Хелпер -->
-                    <button class="MD">MEDCLOUD</button>
+                    <button class="MD">TEST</button>
                 </a><!--  Просто кнопка на Хелпер -->
             </div><!--  Просто кнопка на Хелпер -->
             <div class="Right_head">
@@ -83,15 +83,11 @@ require_once "action/connect.php";
                 <div></div>
             </a>
             <div class="refresh">
-            <p class="ink"><a href="Test.php"><img src="file\icons\Logo.png" alt="test"></a><br>
-                 ORStudio <br> Оксентий Роман Сергеевич Студио <br> 2022-2022 </p>
+                <a href="Test.php"><img src="file\icons\test.png" alt="test"></a>
             </div>
-            <div id="clock" class="clock">         
-            <script src="JavaScript/clock.js">
-            </script> <!-- Подключение файла с часами-->
-            </div><!-- ЧАСЫ-->
-
-        </div>
+            <div id="clock" class="clock"></div><!-- ЧАСЫ-->
+            <script src="JavaScript/clock.js"></script> <!-- Подключение файла с часами-->
+        </div><!-- ЧАСЫ-->
     </div>
 </body>
 
