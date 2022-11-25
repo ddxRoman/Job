@@ -213,10 +213,12 @@ iframe {
 }
 
 .clock {
-    display: grid;
-    vertical-align: middle;
-    justify-self: end;
-    font-size: 35pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 35px;
+    font-size: calc(24px+16*(100vw));
     padding-right: 10px;
     color: #5a5a5a;
 }
@@ -274,6 +276,7 @@ a{
 }
 .ink{
    text-align: center;
+   color: #818181;
 }
 .ink img{
     width: 24px;

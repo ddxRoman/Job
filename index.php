@@ -90,7 +90,6 @@ require_once "action/connect.php";
             <script src="JavaScript/clock.js">
             </script> <!-- Подключение файла с часами-->
             </div><!-- ЧАСЫ-->
-
         </div>
     </div>
 </body>
