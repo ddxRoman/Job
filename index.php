@@ -56,8 +56,8 @@ require_once "action/connect.php";
                     <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>
                     <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
-                    <a href="https://calendar.google.com/calendar/u/0/r?cid=medcloud.pro@gmail.com"><button>Календарь</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1NfndicVea-VHRsdQBzZtBHAiQFsy-qO1WTPiGBF8jVo/edit#gid=1861358479" target="_blank"><button class="document">БАГИ</button></a><br>
+                    <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a>
                 </div>
             </div>
             <div class="container">
@@ -84,7 +84,7 @@ require_once "action/connect.php";
             </a>
             <div class="refresh">
             <p class="ink"><a href="Test.php"><img src="file\icons\Logo.png" alt="test"></a><br>
-                 ORStudio <br> Оксентий Роман Сергеевич Студио <br> 2022-2022 </p>
+                 ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright2022 </p>
             </div>
             <div id="clock" class="clock">         
             <script src="JavaScript/clock.js">

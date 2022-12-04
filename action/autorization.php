@@ -20,14 +20,15 @@ body{
 }
 </style>
     <div class="allAutorize">
-<div class="header-autorization"></div>
+
     <div class="autorize">
-    <a href="https://github.com/ddxRoman"><img width="px" height="240px" src="../file/icons/Logo.png"></a>
+    <a href="https://github.com/ddxRoman"><img src="../file/icons/Logo.png" alt="Logo" title="ORStudio"></a>
     <form action="signin.php" method="post">
     <input required type="text" name="login" placeholder="Логин"><br>
     <input required type="password" name="password" placeholder="Пароль"><br>
 <button type="submit">Get to work</button>
 </form>
+
 <div class="message">
 <p class="sms"> <?echo $_SESSION['sms']; ?> </p> 
 </div>

@@ -17,6 +17,6 @@ color: #5a5a5a;
 </style>
 </head>
 <body>
-    <p class="clock">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut, tempora recusandae similique, magni rem illum aspernatur soluta assumenda officia, sint consectetur nostrum sed reiciendis quidem. Expedita voluptate temporibus iste!</p>
+    <a href="2ddd@ds.ru"><img src="/file/icons/Logo.png"></a>
 </body>
 </html>
