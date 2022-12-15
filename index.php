@@ -12,12 +12,13 @@ require_once "action/connect.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image" href="file/icons/general.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style_redesign.css"> -->
     <link rel="stylesheet" type="text/css" href="css/button.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medcloud</title>
 </head>
 
-<body>
+<body></body>
     <div class="all">
         <!-- Общий блок на всю страницу-->
         <div class="header">
