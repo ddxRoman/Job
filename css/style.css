@@ -3,10 +3,10 @@
     margin-left: 5%;
     margin-right: 5%;
     /* height: 100%; */
-    grid-template-rows: 13% 5% 3% 67% 2% 35%;
+    grid-template-rows: 13% 4% 3% 67% 1% 35%; /* Хедер, мис панелька, сама полоска hr, боди, нижний hr, футер*/
 }
 
-div { /* Границы всех Дивов что тольео есть*/
+div { /* Границы всех Дивов что только есть*/
     border: 1px solid rgba(255, 0, 0, 0);
 }
 
@@ -19,7 +19,7 @@ div { /* Границы всех Дивов что тольео есть*/
 
 .helperSearch input{
 width: 32%;
-}
+}  
 
 .return{
     width: 33px;
@@ -62,7 +62,7 @@ width: 32%;
 
 .header {
     /* margin-bottom: 10px; */
-    /* height: 90px; */
+    height: 90px;
     display: grid;
     background-color: rgba(220, 220, 235, 0.247);
     grid-template-columns: 23% 50% 27%;
@@ -76,7 +76,6 @@ body {
 .iframe-body{
     background-color: rgba(255, 255, 255, 0);
  }
-
 
 .Right_head {
     justify-content: end;
@@ -109,7 +108,7 @@ body {
 .CSD {
     display: grid;
     padding: 2%;
-    height: 80%;
+    height: 100%;
 }
 
 .CSD input {

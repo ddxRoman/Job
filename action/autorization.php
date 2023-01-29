@@ -23,7 +23,7 @@ body{
 
     <div class="autorize">
     <a href="https://github.com/ddxRoman"><img src="../file/icons/Logo.png" alt="Logo" title="ORStudio"></a>
-    <form action="signin.php" method="post">
+    <form action="/action/signin.php" method="post">
     <input required type="text" name="login" placeholder="Логин"><br>
     <input required type="password" name="password" placeholder="Пароль"><br>
 <button type="submit">Get to work</button>

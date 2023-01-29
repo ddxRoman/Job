@@ -22,8 +22,8 @@
             <a href="https://study.helsi.pro/" target="_blank"><button>HelsiPro</button></a>
             <a href="https://dev7-analizi-mis.bizonoff-dev.net/" target="_blank"><button>DEV7</button></a>
             <a href="https://test.lab.helsi.pro/" target="_blank"><button>Тест ХОТфиксов</button></a>
-            <a href=" https://studylabs.helsi.pro" target="_blank"><button>СтадилабС</button></a>
-            <a href="https://study.helsi.pro/" target="_blank"><button>ХелсиТест</button></a>
+            <a href="https://studylabs.helsi.pro" target="_blank"><button>СтадилабС</button></a>
+            <a href="https://test.lab.helsi.pro/" target="_blank"><button>ХелсиТест</button></a>
            
             </div>
 <!--<a href="" target="_blank"><button></button></a>

@@ -37,7 +37,7 @@
                                         <option value="1">Закрыто</option>
                                     <? } ?>
                                 </select>
-                                <a href="../action/editTask.php?id=<?= $products[0] ?>"><img width="16px" height="16px" src="../file/icons/edit.png"></a>
+                                <a href="../action/editTask.php?id=<?= $products[0] ?>"><img width="16px" height="16px" title="Редактировать" src="../file/icons/edit.png"></a>
                                 <select name="priority" onchange="this.form.submit()">
                                     <? if ($products[5] == 0) { ?>
                                         <option value="0">Backlog</option>
@@ -56,7 +56,7 @@
                                     <?
                                     } ?>
                                 </select>
-                                <a href="/action/profile2.php" target="_blank"> <font class="owner"> <? echo $products[4]; ?> </font></a>
+                                <a title="Профиль автора" href="/action/profile2.php" target="_blank"> <font class="owner"> <? echo $products[4]; ?> </font></a>
                             </form>
                             <div class="accordion__content">
                                 <?= $products[2] ?>
@@ -73,7 +73,7 @@
                                             <option value="0">Актуально</option>
                                         <? } ?>
                                     </select>
-                                    <a href="/action/profile2.php" target="_blank"> <font class="owner"> <? echo $products[4]; ?> </font></a>
+                                    <a title="Профиль автора" href="/action/profile2.php" target="_blank"> <font class="owner"> <? echo $products[4]; ?> </font></a>
                                 </form>
                                 <div color="yellow" class="accordion__content_close">
                                     <?= $products[2] ?>

@@ -2,6 +2,7 @@
 require_once "function/checkaut.php";
 require_once "function/checkrole.php";
 require_once "action/connect.php";
+// require_once "function/profilecheck.php"
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ require_once "action/connect.php";
     <title>Medcloud</title>
 </head>
 
-<body></body>
+<body>
     <div class="all">
         <!-- Общий блок на всю страницу-->
         <div class="header">
@@ -46,7 +47,10 @@ require_once "action/connect.php";
             <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
             <a href="https://mail.google.com" target="_blank"><button>Почта</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
+            <a href="https://docs.google.com/spreadsheets/d/1buvZRD-C-CK60GxRqRZjGVERsNOtAvi8hp8gR9OQXtA/edit#gid=0" target="_blank"><button>Трекинг</button></a>
+            <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Владе</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=479952363" target="_blank"><button>Шорт Аналики</button></a>
+
         </div><!-- Тут заканчивается МИС панель-->
         <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
        <div class="body">   <!-- Начало Тела сайта -->
@@ -57,6 +61,7 @@ require_once "action/connect.php";
                     <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>
                     <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
+                    <a href="https://master-gadget.ru/"><button>MG</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1NfndicVea-VHRsdQBzZtBHAiQFsy-qO1WTPiGBF8jVo/edit#gid=1861358479" target="_blank"><button class="document">БАГИ</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a>
                 </div>
@@ -64,8 +69,8 @@ require_once "action/connect.php";
             <div class="container">
                 <iframe name="1" src="">
                 </iframe>
+           
             </div>
-
             <?php if ($_SESSION['user']['status'] == 9) { ?><!-- Берем Роль пользователя и проверяем если она равно 9 (у нас это админ) то показываем Правое меню-->
                 <div class="rmenu">
                     <iframe name="task" src="Taskmanager/Task.php">
@@ -85,7 +90,7 @@ require_once "action/connect.php";
             </a>
             <div class="refresh">
             <p class="ink"><a href="Test.php"><img src="file\icons\Logo.png" alt="test"></a><br>
-                 ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright2022 </p>
+                 ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p>
             </div>
             <div id="clock" class="clock">         
             <script src="JavaScript/clock.js">

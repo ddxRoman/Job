@@ -46,7 +46,7 @@ if (!$_SESSION['user']) {
         <div class="full">
             <div class="date"> <a href="/action/profile2.php"><?= $_SESSION['user']['login'] ?></a>
                 <font color="4C4F6B"><b><?= $_SESSION['user']['role'] ?></b></font><br>
-                <a class="exit" href="action/logout.php"><button>Выйти</button></a>
+                <a class="exit" href="/action/logout.php"><button>Выйти</button></a>
             </div>
             <div class="Ava"><img src="<?= $_SESSION['user']['avatar'] ?>" width="100%"></div>
         </div>
