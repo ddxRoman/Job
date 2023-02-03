@@ -107,3 +107,11 @@ body {
   font-weight: 600;
   color: #914a4a;
 }
+
+form img{
+  margin-left: 50px;
+}
+
+.accordion__body-img{
+  margin-left: 50px;
+}

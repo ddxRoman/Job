@@ -12,7 +12,17 @@
     </div>
     <div class="taskadd">
     <form action="/action/addtask.php" method="POST" >
-    <input required type="text" name="name" placeholder="Введите название"><br>
+    <input required type="text" name="name" placeholder="Введите название">
+
+    
+    <select name="prioritet"> 
+        <option value="0">Backlog </option>
+        <option value=" 1">Надо сделать</option> 
+        <option value=" 2">Нет знаний </option>
+    </select>
+
+
+    <br>
     <label>Суть задачи:</label><br>
     <textarea required type="text" name="body"></textarea><br>
 <button type="submit">Сохранить</button>

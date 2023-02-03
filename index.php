@@ -2,9 +2,8 @@
 require_once "function/checkaut.php";
 require_once "function/checkrole.php";
 require_once "action/connect.php";
-// require_once "function/profilecheck.php"
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +49,6 @@ require_once "action/connect.php";
             <a href="https://docs.google.com/spreadsheets/d/1buvZRD-C-CK60GxRqRZjGVERsNOtAvi8hp8gR9OQXtA/edit#gid=0" target="_blank"><button>Трекинг</button></a>
             <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Владе</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=479952363" target="_blank"><button>Шорт Аналики</button></a>
-
         </div><!-- Тут заканчивается МИС панель-->
         <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
        <div class="body">   <!-- Начало Тела сайта -->
