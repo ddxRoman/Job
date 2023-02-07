@@ -41,7 +41,7 @@ body {
   color: #fff;
   font-weight: 500;
   background-color: rgba(238, 192, 106, 0.507);
-  cursor: pointer;
+   cursor: pointer;
   transition: background-color 0.2s ease-out;
   height: 25px;
 }
@@ -78,6 +78,7 @@ body {
   background: rgb(255, 255, 255);
 
 }
+
 .accordion__content_close {
   padding: 0.25rem 0.5rem;
   background: rgb(153, 153, 153);
@@ -113,5 +114,5 @@ form img{
 }
 
 .accordion__body-img{
-  margin-left: 50px;
+  margin-left: 5px;
 }

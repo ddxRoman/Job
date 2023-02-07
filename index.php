@@ -46,7 +46,7 @@ require_once "action/connect.php";
             <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
             <a href="https://mail.google.com" target="_blank"><button>Почта</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
-            <a href="https://docs.google.com/spreadsheets/d/1buvZRD-C-CK60GxRqRZjGVERsNOtAvi8hp8gR9OQXtA/edit#gid=0" target="_blank"><button>Трекинг</button></a>
+            <a href="https://docs.google.com/spreadsheets/d/1ECgekNqSGOP5MNWge4o1wIHdl8Ep_wAW/edit#gid=1203791252" target="_blank"><button>Трекинг Хелси</button></a>
             <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Владе</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=479952363" target="_blank"><button>Шорт Аналики</button></a>
         </div><!-- Тут заканчивается МИС панель-->
