@@ -77,7 +77,7 @@
 
                     else  if ($products[3] == 1) {  ?>
                             <!---------------------------  Тут мы начали вторую проверку, на то статус 1 Закрыто---------------------------------->
-                            <div style="background-color:#abadb8;" class="accordion__header">
+                            <div style="background: linear-gradient(45deg, #58c436, #7ed66a, #b4e3ac, #e9ffe5);" class="accordion__header_close">
                                 <p class="number"> № <s> <?= $products[0]  ?> : </p>
                                 <p class="nametasks"><?= $products[1] ?></s></p>
                             </div>
@@ -102,7 +102,7 @@
                         }  // Тут мы закрыли вторую проверку, на то статус 1 Закрыто 
                         else if ($products[3] == 2) { ?>
 
-                                <div style="background-color:#6b5c48;" class="accordion__header">
+                                <div style="background: linear-gradient(45deg, #7a7a22, #bdba64, #e3e3ac, #ffffe5);" class="accordion__header">
                                     <p class="number"> № <s> <?= $products[0]  ?> : </p>
                                     <p class="nametasks"><?= $products[1] ?></s></p>
                                 </div>
