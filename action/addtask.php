@@ -8,10 +8,11 @@ $prioritet=$_POST['prioritet'];
 $author=$_SESSION['user']['login'];
 echo $name."<br>  Тело - ". $body;
 echo "<br> Приоритет  =  ". $prioritet;
+$today = date("d-m-Y в H:i:s "); 
 if($name!=''){
 
-mysqli_query($connect, "INSERT INTO `tasks` (`id`, `name`, `content`, `Status`, `owner`, `Priority`)
- VALUES (NULL, '$name', '$body', '0', '$author', '$prioritet')");
+mysqli_query($connect, "INSERT INTO `tasks` (`id`, `name`, `content`, `Status`, `owner`, `Priority`, `date`)
+ VALUES (NULL, '$name', '$body', '0', '$author', '$prioritet','$today')");
 
 
  header ('Location: ../Taskmanager/Task.php');

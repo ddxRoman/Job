@@ -39,7 +39,7 @@
                                     ?> <!-- Проверяем если статус задачи 1 то выводим Селект где первая запись Активный  -->
 
                                     <option value="0">Актуально</option>
-                                    <option value="1">Закрыто</option>
+                                    <option value="1">Выполнено</option>
                                     <option value="2">Не актуально</option>
                                     <? //}
                                     ?>
@@ -63,21 +63,25 @@
                                     <?
                                     } ?>
                                 </select>
-                                <a title="Профиль автора" href="/action/profile2.php" target="_blank">
-                                    <font class="owner"> <? echo $products[4]; ?> </font>
-                                </a>
-
                                 <a a href="/action/delete_task.php?id=<?= $products[0] ?>"><img src="/file/icons/delete.png" width="16px" height="16px"></a>
+                                
+                               
                             </form>
                             <div class="accordion__content">
                                 <?= $products[2] ?>
+
                             </div>
+                            <a title="Профиль автора" href="/action/profile2.php" target="_blank">
+                                    <font class="owner"> <? echo $products[4]; ?> </font>
+                                </a>
+
+                                <font class="creation_date">Создано: <?= $products[6] ?></font>
 
                         <? } // Тут мы закрыли первую проверку, на то статус 0 Актуальный 
 
                     else  if ($products[3] == 1) {  ?>
                             <!---------------------------  Тут мы начали вторую проверку, на то статус 1 Закрыто---------------------------------->
-                            <div style="background: linear-gradient(45deg, #58c436, #7ed66a, #b4e3ac, #e9ffe5);" class="accordion__header_close">
+                            <div style="background: linear-gradient(45deg, #58c436, #7ed66a, #b4e3ac, #e9ffe5);" class="accordion__header">
                                 <p class="number"> № <s> <?= $products[0]  ?> : </p>
                                 <p class="nametasks"><?= $products[1] ?></s></p>
                             </div>
@@ -85,18 +89,24 @@
                                 <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
                                     <select name="currency" onchange="this.form.submit()">
 
-                                        <option value="1">Закрыто</option>
+                                        <option value="1">Выполнено</option>
                                         <option value="2">Не актуально</option>
                                         <option value="0">Актуально</option>
 
                                     </select>
-                                    <a title="Профиль автора" href="/action/profile2.php" target="_blank">
-                                        <font class="owner"> <? echo $products[4]; ?> </font>
-                                    </a>
+
                                 </form>
-                                <div color="yellow" class="accordion__content_close">
+                                <div color="yellow" class="accordion__content">
                                     <?= $products[2] ?>
-                                </div>
+                                </div>                                
+                                
+                            
+                            <a title="Профиль автора" href="/action/profile2.php" target="_blank">
+                                    <font class="owner"> <? echo $products[4]; ?> </font>
+                                </a>
+
+                                <font class="creation_date">Создано: <?= $products[6] ?></font> <br>
+                                <font class="creation_date">Закрыто: <?= $products[7] ?></font>
 
                             <?
                         }  // Тут мы закрыли вторую проверку, на то статус 1 Закрыто 
@@ -110,18 +120,22 @@
                                     <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
                                         <select name="currency" onchange="this.form.submit()">
                                             <option value="2">Не актуально</option>
-                                            <option value="1">Закрыто</option>
+                                            <option value="1">Выполнено</option>
                                             <option value="0">Актуально</option>
 
                                         </select>
-                                        <a title="Профиль автора" href="/action/profile2.php" target="_blank">
-                                            <font class="owner"> <? echo $products[4]; ?> </font>
-                                        </a>
+
                                     </form>
 
-                                    <div color="yellow" class="accordion__content_close">
+                                    <div color="yellow" class="accordion__content">
                                         <?= $products[2] ?>
                                     </div>
+                                    <a title="Профиль автора" href="/action/profile2.php" target="_blank">
+                                    <font class="owner"> <? echo $products[4]; ?> </font>
+                                </a>
+
+                                <font class="creation_date">Создано: <?= $products[6] ?></font>
+
                                 <? }
 
                                 ?>

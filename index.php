@@ -83,7 +83,7 @@ require_once "action/connect.php";
         </div>
         <hr class="footer-hr">
         <div class="footer">
-            <a href="Taskmanager/Task.php" target="_blank">
+            <a href="Taskmanager/Test.php" target="_blank">
                 <div></div>
             </a>
             <div class="refresh">
