@@ -1,9 +1,3 @@
-  <body>
-   
-    <div class="okno">
-      Всплывающее окошко!
-    </div>
-
     <?php session_start(); ?>
 <!doctype html>
 <html lang="ru">
@@ -15,21 +9,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>werTaskmanager</title>
-
-
-    <style>
-      .okno {
-        width: 300px;
-        height: 50px;
-        text-align: center;
-        padding: 15px;
-        border: 3px solid #0000cc;
-        border-radius: 10px;
-        color: #0000cc;
-      }
-    </style>
-
-
 </head>
 
 <body>
@@ -90,15 +69,6 @@
                             </form>
                             <div class="accordion__content">
                                 <?= $products[2] ?>
-                                      
-    <a href="#" id="main">
-      <div id="okno">
-        Всплывающее окошко!
-      </div>
-    </a>
-     
-    <a href="#main">Вызвать всплывающее окно</a>
- 
                             </div>
                             <a title="Профиль автора" href="/action/profile2.php" target="_blank">
                                     <font class="owner"> <? echo $products[4]; ?> </font>
