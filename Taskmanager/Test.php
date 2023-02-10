@@ -1,4 +1,4 @@
-    <?php session_start(); ?>
+<?php session_start(); ?>
 <!doctype html>
 <html lang="ru">
 
@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="../css/style_redesign.css"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>werTaskmanager</title>
+    <title>Taskmanager</title>
 </head>
 
 <body>
@@ -63,12 +63,13 @@
                                     <?
                                     } ?>
                                 </select>
-                                <a a href="/action/delete_task.php?id=<?= $products[0] ?>"><img src="/file/icons/delete.png" width="16px" height="16px"></a>
+                                <a href="/action/delete_task.php?id=<?= $products[0] ?>"><img src="/file/icons/delete.png" width="16px" height="16px"></a>
                                 
                                
                             </form>
                             <div class="accordion__content">
                                 <?= $products[2] ?>
+
                             </div>
                             <a title="Профиль автора" href="/action/profile2.php" target="_blank">
                                     <font class="owner"> <? echo $products[4]; ?> </font>

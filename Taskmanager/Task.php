@@ -75,7 +75,7 @@
                                     <font class="owner"> <? echo $products[4]; ?> </font>
                                 </a>
 
-                                <font class="creation_date">Создано: <?= $products[6] ?></font>
+                                <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font>
 
                         <? } // Тут мы закрыли первую проверку, на то статус 0 Актуальный 
 
@@ -105,8 +105,8 @@
                                     <font class="owner"> <? echo $products[4]; ?> </font>
                                 </a>
 
-                                <font class="creation_date">Создано: <?= $products[6] ?></font> <br>
-                                <font class="creation_date">Закрыто: <?= $products[7] ?></font>
+                                <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font> <br>
+                                <font class="creation_date"><b>Закрыто:</b> <?= $products[7] ?></font>
 
                             <?
                         }  // Тут мы закрыли вторую проверку, на то статус 1 Закрыто 
@@ -134,7 +134,7 @@
                                     <font class="owner"> <? echo $products[4]; ?> </font>
                                 </a>
 
-                                <font class="creation_date">Создано: <?= $products[6] ?></font>
+                                <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font>
 
                                 <? }
 
