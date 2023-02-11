@@ -86,8 +86,8 @@
                             <a title="Профиль автора" href="/action/profile2.php" target="_blank">
                                     <font class="owner"> <? echo $products[4]; ?> </font>
                                 </a>
-
                                 <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font>
+                                <a href="">Коментарии</a> <!-- Тут далее надо сделать что бы писались коменты-->
 
                         <? } // Тут мы закрыли первую проверку, на то статус 0 Актуальный 
 
@@ -96,6 +96,8 @@
                             <div style="background: linear-gradient(45deg, #58c436, #7ed66a, #b4e3ac, #e9ffe5);" class="accordion__header">
                                 <p class="number"> № <s> <?= $products[0]  ?> : </p>
                                 <p class="nametasks"><?= $products[1] ?></s></p>
+
+                                
                             </div>
                             <div class="accordion__body">
                                 <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
@@ -127,6 +129,16 @@
                                 <div style="background: linear-gradient(45deg, #7a7a22, #bdba64, #e3e3ac, #ffffe5);" class="accordion__header">
                                     <p class="number"> № <s> <?= $products[0]  ?> : </p>
                                     <p class="nametasks"><?= $products[1] ?></s></p>
+
+
+                                    <? if($products[5]==0){ // Проверка на статус таски, и вывод приоитета возле названия в заголовке
+                                ?><font class="prioritet-task0">Backlog</font><?
+                            }else if($products[5]==1){ ?><font  class="prioritet-task1">Надо сделать</font>  <?
+                            }else if($products[5]==2 ){ ?><font class="prioritet-task2">Нет знаний</font><?
+                                
+                            }
+                            ?>
+
                                 </div>
                                 <div class="accordion__body">
                                     <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form">
