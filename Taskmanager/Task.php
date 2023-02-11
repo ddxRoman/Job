@@ -74,14 +74,18 @@
                                         <option value="0">Backlog</option>
                                     <?
                                     } ?>
-                                </select>
-                                <a a href="/action/delete_task.php?id=<?= $products[0] ?>"><img src="/file/icons/delete.png" width="16px" height="16px"></a>
-                                
+                                </select> 
+                                <form action="../action/accept_delete.php?id=<?= $products[0] ?>" method="post" name="real_delete">
+                                <a href="../action/accept_delete.php?id=<?= $products[0] ?>"><img src="/file/icons/delete.png" width="16px" height="16px"></a>
+
+                                </form>
                                
                             </form>
                             <div class="accordion__content">
-                                <?= $products[2] ?>
+                                <?= $products[2] ?><br>
+                                <a href="<?=$products[8];?>" target="_blank"><img class="pictures-in-tasks" src="<?=$products[8];?>"></a>
 
+                               
                             </div>
                             <a title="Профиль автора" href="/action/profile2.php" target="_blank">
                                     <font class="owner"> <? echo $products[4]; ?> </font>
@@ -112,6 +116,7 @@
                                 </form>
                                 <div color="yellow" class="accordion__content">
                                     <?= $products[2] ?>
+                                    <img src="<?=$products[8];?>">
                                 </div>                                
                                 
                             
@@ -153,6 +158,7 @@
 
                                     <div color="yellow" class="accordion__content">
                                         <?= $products[2] ?>
+                                        <img src="<?=$products[8];?>">
                                     </div>
                                     <a title="Профиль автора" href="/action/profile2.php" target="_blank">
                                     <font class="owner"> <? echo $products[4]; ?> </font>

@@ -152,5 +152,7 @@ body::-webkit-scrollbar-thumb {
                 /* margin-left: 5%; */
               }
 
-
+.pictures-in-tasks{
+  width: 80%;
+}
 
