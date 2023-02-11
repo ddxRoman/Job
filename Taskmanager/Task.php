@@ -29,8 +29,18 @@
                     <!-------------------------------------------- Проверяем если статус задачи 0, то выводим эти результаты----------------------------->
                     <? if ($products[3] == 0) { ?>
                         <div class="accordion__header"> <!-- Верхний див где номер таски и имя -->
+ 
                             <p class="number"> № <?= $products[0]  ?> : </p>
                             <p class="nametasks"><?= $products[1] ?></p>
+                            
+                            <? if($products[5]==0){ // Проверка на статус таски, и вывод приоитета возле названия в заголовке
+                                ?><font class="prioritet-task0">Backlog</font><?
+                            }else if($products[5]==1){ ?><font  class="prioritet-task1">Надо сделать</font>  <?
+                            }else if($products[5]==2 ){ ?><font class="prioritet-task2">Нет знаний</font><?
+                                
+                            }
+                            ?>
+ 
                         </div>
                         <div class="accordion__body">
                             <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form"> <!-- форма с селектами-->
@@ -47,9 +57,11 @@
                                 <a href="../action/editTask.php?id=<?= $products[0] ?>"><img width="16px" height="16px" title="Редактировать" src="../file/icons/edit.png"></a> <!-- Кнопка редактировать -->
                                 <select name="priority" onchange="this.form.submit()"><!-- Селект с сортировкой Статусов задач, выглядит как хуйня, надо переделать что бы тут был запрос и с запроса шел этот статус-->
                                     <? if ($products[5] == 0) { ?>
+                                         
                                         <option value="0">Backlog</option>
                                         <option value="1">Надо сделать</option>
                                         <option value="2">Нет знаний</option>
+                                       
                                     <?
                                     } else if ($products[5] == 1) { ?>
                                         <option value="1">Надо сделать</option>
