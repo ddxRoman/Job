@@ -14,7 +14,7 @@
 <body>
     <?php if ($_SESSION['user']['status'] == 9) { ?>
         <div class="taskheader">
-            <a href="../folders/newTask.php"><button class="addtask" title="Добавить задачу">+</button></a> <!-- Кнопка добавления таски-->
+            <a class="Aaddtask" href="../folders/newTask.php"><button class="addtask" title="Добавить задачу">+</button></a> <!-- Кнопка добавления таски-->
         </div>
         <?php
         require_once '../action/connect.php'; // Проверка подключения к БД
@@ -31,25 +31,20 @@
                     <!-------------------------------------------- Проверяем если статус задачи 0, то выводим эти результаты----------------------------->
                     <? if ($products[3] == 0) { ?>
                         <div class="accordion__header"> <!-- Верхний див где номер таски и имя -->
-
-                            <p class="number"> № <?= $products[0]  ?> : </p>
+                        <a href="#" target="_blank"><p class="number"> № <?= $products[0]?>:</p></a><!-- Вот тут ссылка на весь экран-->
                             <p class="nametasks"><?= $products[1] ?></p>
-
                             <? if ($products[5] == 0) { // Проверка на статус таски, и вывод приоитета возле названия в заголовке
                             ?><font class="prioritet-task0">Backlog</font><?
                                                                             } else if ($products[5] == 1) { ?><font class="prioritet-task1">Надо сделать</font> <?
                                                                                                         } else if ($products[5] == 2) { ?><font class="prioritet-task2">Нет знаний</font><?
-
                                                                                                         }
                                                                                                             ?>
-
                         </div>
                         <div class="accordion__body">
                             <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form"> <!-- форма с селектами-->
                                 <select name="currency" onchange="this.form.submit()">
                                     <? //if ($product[3] == 0) { 
                                     ?> <!-- Проверяем если статус задачи 1 то выводим Селект где первая запись Активный  -->
-
                                     <option value="0">Актуально</option>
                                     <option value="1">Выполнено</option>
                                     <option value="2">Не актуально</option>
@@ -84,7 +79,7 @@
 
                             </form>
                             <div class="accordion__content">
-                                <?= $products[2] ?><br>
+                                <?= $products[2] ?>
                                 <a href="<?= $products[8]; ?>" target="_blank"><img class="pictures-in-tasks" src="<?= $products[8]; ?>"></a>
 
 
@@ -98,7 +93,7 @@
                             <div class="comments-block"><?
                                                         foreach ($comment as $comments) { // Перебор массива $ c его записью в массив $
                                                             if ($comments[1] == $products[0]) {//Проверяем если айди таска комента равно айди самого таска то выводим его
-                                                                echo ($comments[3] . " " . $comments[4] . "<br><hr>" . $comments[2] . "<br>" . "<a href='$comments[5]'><img src='$comments[5]' class='pictures-in-tasks'></a> <hr class='end-comments'>");
+                                                                echo ($comments[3] . " " . $comments[4] . "<br><hr>" . $comments[2]  . "<a href='$comments[5]'><img src='$comments[5]' class='pictures-in-tasks'></a> <hr class='end-comments'>");
                                                             }
                                                         } ?>
                                 <form action="../action/addComents.php" method="post" enctype="multipart/form-data">
@@ -106,7 +101,6 @@
                                     <input type="file" name="picture"><br>
                                     <input type="hidden" name="id_task" value="<?= $products[0] ?>">
                                     <button>Добавить</button>
-
                                 </form>
                             </div>
 <!----------------------------------------Конец пати с комментариями------------------------------------------------------------------>

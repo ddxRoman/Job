@@ -254,8 +254,8 @@ label {
 }
 
 .taskheader {
-    display: grid;
-    justify-content: end;
+    /* display: grid; */
+    justify-content: center;
 }
 
 .sms {
