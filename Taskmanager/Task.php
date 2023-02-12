@@ -84,7 +84,7 @@
 
 
                             </div>
-                            <a title="Профиль автора" href="/action/profile2.php" target="_blank">
+                            <a title="Профиль автора" href="/action/profile2.php?id=<?=$products[4];?>" target="_blank">
                                 <font class="owner"> <? echo $products[4]; ?> </font>
                             </a>
                             <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font>
@@ -131,12 +131,33 @@
                                 </div>
 
 
-                                <a title="Профиль автора" href="/action/profile2.php" target="_blank">
-                                    <font class="owner"> <? echo $products[4]; ?> </font>
-                                </a>
+                                <a title="Профиль автора" href="/action/profile2.php?id=<?=$products[4];?>" target="_blank">
+                                <font class="owner"> <? echo $products[4]; ?> </font>
+                            </a>
 
                                 <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font> <br>
                                 <font class="creation_date"><b>Закрыто:</b> <?= $products[7] ?></font>
+
+
+<!----------------------------------------Начало пати с комментариями------------------------------------------------------------------>
+
+<div class="comments-block"><?
+                                                        foreach ($comment as $comments) { // Перебор массива $ c его записью в массив $
+                                                            if ($comments[1] == $products[0]) {//Проверяем если айди таска комента равно айди самого таска то выводим его
+                                                                echo ($comments[3] . " " . $comments[4] . "<br><hr>" . $comments[2]  . "<a href='$comments[5]'><img src='$comments[5]' class='pictures-in-tasks'></a> <hr class='end-comments'>");
+                                                            }
+                                                        } ?>
+                                <form action="../action/addComents.php" method="post" enctype="multipart/form-data">
+                                    <textarea class="add-comments" name="contant"></textarea><br>
+                                    <input type="file" name="picture"><br>
+                                    <input type="hidden" name="id_task" value="<?= $products[0] ?>">
+                                    <button>Добавить</button>
+                                </form>
+                            </div>
+<!----------------------------------------Конец пати с комментариями------------------------------------------------------------------>
+    
+
+                                
 
                             <?
                         }  // Тут мы закрыли вторую проверку, на то статус 1 Закрыто 
@@ -171,11 +192,31 @@
                                         <?= $products[2] ?>
                                         <img src="<?= $products[8]; ?>">
                                     </div>
-                                    <a title="Профиль автора" href="/action/profile2.php" target="_blank">
-                                        <font class="owner"> <? echo $products[4]; ?> </font>
-                                    </a>
+                                    <a title="Профиль автора" href="/action/profile2.php?id=<?=$products[4];?>" target="_blank">
+                                <font class="owner"> <? echo $products[4]; ?> </font>
+                            </a>
 
                                     <font class="creation_date"><b>Создано:</b> <?= $products[6] ?></font>
+
+<!----------------------------------------Начало пати с комментариями------------------------------------------------------------------>
+
+<div class="comments-block"><?
+                                                        foreach ($comment as $comments) { // Перебор массива $ c его записью в массив $
+                                                            if ($comments[1] == $products[0]) {//Проверяем если айди таска комента равно айди самого таска то выводим его
+                                                                echo ($comments[3] . " " . $comments[4] . "<br><hr>" . $comments[2]  . "<a href='$comments[5]'><img src='$comments[5]' class='pictures-in-tasks'></a> <hr class='end-comments'>");
+                                                            }
+                                                        } ?>
+                                <form action="../action/addComents.php" method="post" enctype="multipart/form-data">
+                                    <textarea class="add-comments" name="contant"></textarea><br>
+                                    <input type="file" name="picture"><br>
+                                    <input type="hidden" name="id_task" value="<?= $products[0] ?>">
+                                    <button>Добавить</button>
+                                </form>
+                            </div>
+<!----------------------------------------Конец пати с комментариями------------------------------------------------------------------>
+    
+
+
 
                                 <? }
 

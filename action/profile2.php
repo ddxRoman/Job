@@ -1,7 +1,17 @@
 <?php
-session_start();
+require_once 'connect.php';
+$name_user = $_GET['id'];
+// echo $name_user;
+$user = mysqli_query($connect, "SELECT*FROM `users` WHERE `name`='$name_user'");
+$user = mysqli_fetch_assoc($user);
 
-// header ('Location: ../index.php');
+// echo "Вот тут его Айди должен быть";
+// echo "<pre>";
+// print_r($user);
+// echo "</pre> <br><br><br>";
+// echo $user['id'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +30,10 @@ body{
 </style>
     <div class="profile">
     <div class="full_profile_page">
-    <div class="Ava_profile_page"><img src="<?=$_SESSION['user']['avatar']?>">
-    <!-- <div class="edit_profile"><button type="file" name="avatar"><img src="../file/icons/ava_logo.png"></a></button></div></div> Я хз, она сїезжает, её надо нормально поместить, и вообще редачить надо еси шо --> 
-    <div class="date_profile_page">  <?=$_SESSION['user']['login']?><br>
-    <font color="AAFF6B"><b><?=$_SESSION['user']['role']?></b></font>  <br><br></div>  
+    <div class="Ava_profile_page"><img src="<?=$user['avatar'];?>">
+<!-- <input type="file"> -->
+    <div class="date_profile_page">  <?=$user['name'];?><br>
+    <font color="AAFF6B"><b><?=$user['email'];?></b></font>  <br><br></div>  
     <div><a href="../index.php"><button class="GoWork">За работу</button></a></div>
     </div>
     </div>
