@@ -156,3 +156,16 @@ body::-webkit-scrollbar-thumb {
   width: 80%;
 }
 
+.add-comments{
+  width: 90%;
+  margin: 5px;
+}
+
+.comments-block{
+  background-color: rgb(238, 238, 238);
+  border: 1px solid #000000;
+
+}
+hr{
+  margin-top: -2px;
+}
