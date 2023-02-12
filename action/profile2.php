@@ -1,7 +1,7 @@
 <?php
 require_once 'connect.php';
 $name_user = $_GET['id'];
-// echo $name_user;
+echo $name_user;
 $user = mysqli_query($connect, "SELECT*FROM `users` WHERE `name`='$name_user'");
 $user = mysqli_fetch_assoc($user);
 
