@@ -87,7 +87,7 @@ require_once "action/connect.php";
                 <div></div>
             </a>
             <div class="refresh">
-            <p class="ink"><a href="Test.php"><img src="file\icons\Logo.png" alt="test"></a><br>
+            <p class="ink"><a href="Taskmanager/Todo/TodoList.php"><img src="file\icons\Logo.png" alt="test"></a><br>
                  ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p>
             </div>
             <div id="clock" class="clock">         

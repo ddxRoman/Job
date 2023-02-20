@@ -1,18 +1,25 @@
-<?php session_start(); ?>
+<html><a href="/blocks/SQL/action/tablework.php"><img src="/pictures/back.png" width="26px" height="26px"></a>
+<?php
 
-        <?php
-        require_once 'action/connect.php'; // Проверка подключения к БД
-        $product = mysqli_query($connect, "SELECT * FROM `tasks` ORDER BY `status` ASC "); // Подключение к определенной таблице, и получение Статуса записи
-        $product = mysqli_fetch_all($product); // Выбирает все строки из набора $product и помещает их в массив  $product
-        $comment = mysqli_query($connect, "SELECT * FROM `comments` ORDER BY `id` ASC "); // Подключение к определенной таблице, и получение Статуса записи
-        $comment = mysqli_fetch_all($comment); // Выбирает все строки из набора $product и помещает их в массив  $product
-        foreach ($product as $products) {
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);//Вывод реальных ошибок
+require_once 'action/connect.php';
+$product_id = $_GET['id'];
+$product = mysqli_query($connect, "SELECT*FROM `todo` WHERE `id`='$product_id'");
+$product = mysqli_fetch_assoc($product);
 
-            echo("Id Users-".$products[0]."<br>");
-        foreach ($comment as $comments) { // Перебор массива $ c его записью в массив $
-        if($comments[1]==$products[0]){
-           echo($comments[2]."<br>");}
-    
-        }
-    }
+
 ?>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/blocks/SQL/style.css">
+</head>
+
+<body>
+    <h1>Данные по <?= $product_id?></h1>
+    
+    <font class="info"><strong>Идентификатор внутри системы: </strong><?= $product['id'] ?><br></font>
+    <font class="info"><strong>Имя:</strong> <?= $product['name'] ?><br></font>
+    <font class="info"><strong>Пароль:</strong> <?= $product['contant'] ?><br></font>
+</body>
+
+</html>
