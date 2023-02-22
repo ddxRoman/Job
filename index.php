@@ -62,6 +62,7 @@ require_once "action/connect.php";
                     <a href="https://master-gadget.ru/"><button>MG</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1NfndicVea-VHRsdQBzZtBHAiQFsy-qO1WTPiGBF8jVo/edit#gid=1861358479" target="_blank"><button class="document">БАГИ</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a>
+                    <a href="http://php/blocks/JS/index.html">TEST</a>
                 </div>
             </div>
             <div class="container">
