@@ -12,6 +12,7 @@
 <body class="iframe-body">
     <div class="folders">
     <a href="../file/documents/accesses.xlsx" target="_blank"><button>Доступы</button></a>
+    <a href="https://docs.google.com/spreadsheets/d/1ckbF-MXaArHj1oRMtnRun1g141IbWG3iBIakDZp8JcA/edit#gid=0" target="_blank"><button>MG Прогресс</button></a>
     <a href="https://miswiki.atlassian.net/wiki/spaces/LAB/pages/3733848080/Sprint+Goals+3+02.09.22-22.09.22" target="_blank"><button>СПРИНТЫ</button></a>
     <a href="https://docs.google.com/spreadsheets/d/1oSZg4fSM-M1RpaKFx6_Nbbq7kg4_Yeqo5BfO4LKo5V4/edit#gid=1963615237" target="_blank"><button>Таблица релизов</button></a>
     <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>ЛИС Впровадження</button></a>

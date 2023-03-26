@@ -99,16 +99,17 @@ body {
 }
 
 .MD {/*шрифт в кнопке медклауд*/
-    width: 100%;
+    width: 100px;
     height: 60px;
-    font-weight: 600;
-    color: #313131;
+    font-weight: 700;
+    color: #385e52;
 }
 
 .CSD {
     display: grid;
     padding: 2%;
     height: 100%;
+
 }
 
 .CSD input {

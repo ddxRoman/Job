@@ -30,9 +30,9 @@ require_once "action/connect.php";
             </div>
             <div class="knowledge">
                 <!--  Просто кнопка на Хелпер -->
-                <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud?display=list&by_desc=true&create=true" target="_blank">
+                <a href="https://medcloud.csd.com.ua/" target="_blank">
                     <!--  Просто кнопка на Хелпер -->
-                    <button class="MD">MEDCLOUD</button>
+                    <button class="MD">CSD</button>
                 </a><!--  Просто кнопка на Хелпер -->
             </div><!--  Просто кнопка на Хелпер -->
             <div class="Right_head">
@@ -43,11 +43,11 @@ require_once "action/connect.php";
         </div> <!-- Конец хедера-->
         <div class="MisPanel">
             <!-- Тут начинает МИС панель.-->
-            <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Впровадження</button></a>
+            <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Внедрение</button></a>
             <a href="https://mail.google.com" target="_blank"><button>Почта</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1ECgekNqSGOP5MNWge4o1wIHdl8Ep_wAW/edit#gid=1203791252" target="_blank"><button>Трекинг Хелси</button></a>
-            <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Владе</button></a>
+            <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Общий</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=479952363" target="_blank"><button>Шорт Аналики</button></a>
         </div><!-- Тут заканчивается МИС панель-->
         <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
@@ -55,14 +55,13 @@ require_once "action/connect.php";
             <div class="lmenu"> 
                 <div class="links">
                     <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
-                    <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>
-                    <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>
-                    <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
+                    <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>         
+           <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>                    <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                     <a href="https://master-gadget.ru/"><button>MG</button></a><br>
-                    <a href="https://docs.google.com/spreadsheets/d/1NfndicVea-VHRsdQBzZtBHAiQFsy-qO1WTPiGBF8jVo/edit#gid=1861358479" target="_blank"><button class="document">БАГИ</button></a><br>
-                    <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a>
-                    <a href="http://php/blocks/JS/index.html">TEST</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
+                    <a href="http://php/blocks/JS/index.html">JS Lesson</a>
+                    <a href="function/settings.php">Settings</a>
                 </div>
             </div>
             <div class="container">

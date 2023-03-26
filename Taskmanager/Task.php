@@ -129,7 +129,7 @@
 <div class="comments-block"><?
                                                         foreach ($comment as $comments) { // Перебор массива $ c его записью в массив $
                                                             if ($comments[1] == $products[0]) {//Проверяем если айди таска комента равно айди самого таска то выводим его
-                                                                echo ($comments[3] . " " . $comments[4] . "<br><hr>" . $comments[2]  . "<a href='$comments[5]'><img src='$comments[5]' class='pictures-in-tasks'></a> <hr class='end-comments'>");
+                                                                echo ($comments[3] . " " . $comments[4] . "< br><hr>" . $comments[2]  . "<a href='$comments[5]'><img src='$comments[5]' class='pictures-in-tasks'></a> <hr class='end-comments'>");
                                                             }
                                                         } ?>
                                 <form action="../action/addComents.php" method="post" enctype="multipart/form-data">
