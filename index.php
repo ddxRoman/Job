@@ -67,14 +67,14 @@ $textColor=$_POST['txtColor']
                 <div class="links">
                     <a href="folders/docs.php" target="1"><button>Доки</button></a><br>
                     <a href="folders/helper.php" target="1"><button>Хелпер</button></a><br>         
-           <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>                    <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
+           <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>                   
+            <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                     <a href="https://master-gadget.ru/"><button>MG</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
                     <a href="http://php/blocks/JS/index.html">JS Lesson</a>
                     <a href="function/settings.php" target="1">Settings</a>
-                </div>
-                <?php if ($_SESSION['user']['status'] == 9) {?>
+                    <?php if ($_SESSION['user']['status'] == 9) {?>
                 <form action="#" name="bg" method="post">
     Select your backgroundcolor: 
     <input name="bg" type="color" value="<?=$bgColor?>"><br>
@@ -86,6 +86,8 @@ $textColor=$_POST['txtColor']
     <button>Clear</button>
     </form>
                 <?} ?>
+                </div>
+                
              </div>
             <div class="container">
                 <iframe name="1" src="">
