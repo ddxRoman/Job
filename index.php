@@ -2,10 +2,16 @@
 require_once "function/checkaut.php";
 require_once "function/checkrole.php";
 require_once "action/connect.php";
+$bgColor=$_POST['bg'];
+$textColor=$_POST['txtColor']
+
+
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
+
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +23,12 @@ require_once "action/connect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medcloud</title>
 </head>
-
+<style>
+    body{
+        background-color: <?=$bgColor?>;
+        color:<?=$textColor?>;
+    }
+</style>
 <body>
     <div class="all">
         <!-- Общий блок на всю страницу-->
@@ -61,9 +72,21 @@ require_once "action/connect.php";
                     <a href="https://master-gadget.ru/"><button>MG</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
                     <a href="http://php/blocks/JS/index.html">JS Lesson</a>
-                    <a href="function/settings.php">Settings</a>
+                    <a href="function/settings.php" target="1">Settings</a>
                 </div>
-            </div>
+                <?php if ($_SESSION['user']['status'] == 9) {?>
+                <form action="#" name="bg" method="post">
+    Select your backgroundcolor: 
+    <input name="bg" type="color" value="<?=$bgColor?>"><br>
+    Select text color:
+    <input name="txtColor" type="Color" value="<?=$bgColor?>"><br>
+    <button>ГО</button>
+    </form>
+    <form action="#" name="bg" method="post">
+    <button>Clear</button>
+    </form>
+                <?} ?>
+             </div>
             <div class="container">
                 <iframe name="1" src="">
                 </iframe>

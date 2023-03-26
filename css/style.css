@@ -1,3 +1,5 @@
+
+
 .all {
     display: grid;
     margin-left: 5%;
@@ -290,6 +292,10 @@ a{
 }
 .LogoAutorization{
     padding-bottom: 10px;
+}
+
+form .settings{
+margin-top: 1px;
 }
 
 

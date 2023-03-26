@@ -4,8 +4,6 @@
 $bgColor=$_POST['bg'];
 $textColor=$_POST['txtColor']
 
-
-
 ?>
 <style>
     body{
@@ -22,12 +20,15 @@ $textColor=$_POST['txtColor']
     <title>Document</title>
 </head>
 <body>
-<form action="#" name="bg" method="post">
+<form class="settings" action="#" name="bg" method="post">
     Select your backgroundcolor: 
     <input name="bg" type="color" value="<?=$bgColor?>"><br>
     Select text color:
     <input name="txtColor" type="Color" value="<?=$bgColor?>"><br>
     <button>ГО</button>
+    </form>
+    <form action="#" name="bg" method="post">
+    <button>Clear</button>
     </form>
 </body>
 </html>
