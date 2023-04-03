@@ -1,6 +1,9 @@
 <?php
 session_start();
-if($_SESSION['user']) header('Location: ../index.php')
+if($_SESSION){ 
+    header('Location: ../index.php');
+}
+else{
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +23,6 @@ body{
 }
 </style>
     <div class="allAutorize">
-
     <div class="autorize">
     <a href="https://github.com/ddxRoman"><img src="../file/icons/Logo.png" alt="Logo" title="ORStudio"></a>
     <form action="/action/signin.php" method="post">
@@ -30,7 +32,9 @@ body{
 </form>
 
 <div class="message">
-<p class="sms"> <?echo $_SESSION['sms']; ?> </p> 
+<p class="sms"> <?
+    $_SESSION['sms']='';
+echo $_SESSION['sms']; ?> </p> 
 </div>
 <?
 unset($_SESSION['sms']);
@@ -39,3 +43,4 @@ unset($_SESSION['sms']);
 </div>
 </body>
 </html>
+<? }?>

@@ -76,14 +76,20 @@ $textColor=$_POST['txtColor']
                     <a href="function/settings.php" target="1">Settings</a>
                     <?php if ($_SESSION['user']['status'] == 9) {?>
                 <form action="#" name="bg" method="post">
-    Select your backgroundcolor: 
-    <input name="bg" type="color" value="<?=$bgColor?>"><br>
-    Select text color:
-    <input name="txtColor" type="Color" value="<?=$bgColor?>"><br>
+                    <table>
+<tr>
+    <th>Select your backgroundcolor: </th>
+    <th><input name="bg" type="color" value="<?=$bgColor?>"><br></th>
+</tr>
+<tr>
+    <th>Select text color:</th>
+    <th><input name="txtColor" type="Color" value="<?=$textColor?>"><br></th>
+</tr></table>
     <button>ГО</button>
     </form>
     <form action="#" name="bg" method="post">
     <button>Clear</button>
+    
     </form>
                 <?} ?>
                 </div>
