@@ -59,7 +59,7 @@ $textColor=$_POST['txtColor']
             <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
             <a href="https://docs.google.com/spreadsheets/d/1ECgekNqSGOP5MNWge4o1wIHdl8Ep_wAW/edit#gid=1203791252" target="_blank"><button>Трекинг Хелси</button></a>
             <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Общий</button></a>
-            <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=479952363" target="_blank"><button>Шорт Аналики</button></a>
+            <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=542899205" target="_blank"><button>Шорт Аналики</button></a>
         </div><!-- Тут заканчивается МИС панель-->
         <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
        <div class="body">   <!-- Начало Тела сайта -->
@@ -70,7 +70,7 @@ $textColor=$_POST['txtColor']
            <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>                   
             <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
-                    <a href="https://master-gadget.ru/"><button>MG</button></a><br>
+                    <a href="https://master-gadget.ru/" target="_sefl"><button>MG</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
                     <a href="http://php/blocks/JS/index.html">JS Lesson</a>
                     <a href="function/settings.php" target="1">Settings</a>
