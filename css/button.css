@@ -13,11 +13,26 @@
         border-color: rgba(214, 219, 230, 0.767);
       }
 
-
+.site_btn{
+  background-color: #292929;
+  color: white;
+}
 
 button{
   background-color: #20a3d657;
 }
+
+.meet{
+  /* background: linear-gradient(to right, #2684fc, #e94235, #00ac47, #ffba00); */
+  
+  background:
+      
+      linear-gradient(90deg,  #2684fc, #ffffff10 80.71%),
+      linear-gradient(180deg, #e94235, #ffffff10 60.71%),
+      linear-gradient(270deg, #00ac47, #ffffff10 80.71%),
+      linear-gradient(360deg, #ffba00, #ffffff10 80.71%);
+}
+
 
 .no_rules_choice button{
   height: 50px;

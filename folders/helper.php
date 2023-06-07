@@ -24,7 +24,7 @@
 </form>
         </div>
     <div class="link">
-<a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/boards/razrabotka-medklaud"
+<a href="https://helper.bizonoff-dev.net/admin/projects/master-gadget/boards/razrabotka"
         target="_blank"><button>Board</button></a>
     <a href="https://helper.bizonoff-dev.net/admin/projects/medcloud/knowledge-bases/dokumentatsiia-funktsionala"
         target="_blank"><button>Helper</button></a>

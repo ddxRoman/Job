@@ -20,5 +20,10 @@
     <a href="https://docs.google.com/spreadsheets/d/15FS6sJC2ADPFrmeqwfog1LjkerQM9W8bh7Lq1JgQ08U/edit#gid=691924434" target="_blank"><button>Инструкция внедрения</button></a>
     <a href="https://docs.google.com/document/d/14qUnHAUOo6gIP_w40ezxyS4nakGHloNC3uOmWgmvruY/edit?disco=AAAAc2LxseQ" target="_blank"><button>Инстр Внедрения</button></a>
     <a href="https://docs.google.com/document/d/1XG_GLM7O2o95q02mmyiOGVMFOT9togEHu0RV7xvmU8g/edit" target="_blank"><button>Инструкция</button></a>
-</div> </body>
+    <a href="https://docs.google.com/spreadsheets/d/1ECgekNqSGOP5MNWge4o1wIHdl8Ep_wAW/edit#gid=1203791252" target="_blank"><button>Трекинг Хелси</button></a>
+    <a href="https://docs.google.com/spreadsheets/d/19YQTTlq0D1Cr2q7G54SXC0jGG9MrvUurH6YdhfSX8Wc/edit#gid=0" target="_blank"><button>Трекинг Общий</button></a>
+    <a href="https://docs.google.com/spreadsheets/d/1f6g5RMrzm2Gn0KAlKBroDGILou2tWEqRqbYQOBQaDqA/edit#gid=38707061" target="_blank"><button>Внедрение</button></a>
+    <a href="https://docs.google.com/spreadsheets/d/1UFitKlsbTb7Iu5thfGb4YPRPj27RckkjRg_g_kg6Cas/edit" target="_blank"><button>ЧекЛист</button></a>
+</div> 
+</body>
 </html>
