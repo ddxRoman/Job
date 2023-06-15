@@ -97,7 +97,10 @@ $textColor=$_POST['txtColor']
         <hr class="footer-hr">
         <div class="footer">
             <a href="Taskmanager/Test.php" target="_blank">
-                <div></div>
+                <div>
+
+                <?require_once 'function/weather.php';?>
+                </div>
             </a>
             <div class="refresh">
             <p class="ink"><a href="Taskmanager/Todo/TodoList.php"><img src="file\icons\Logo.png" alt="test"></a><br>

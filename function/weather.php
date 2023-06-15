@@ -17,18 +17,26 @@ $data = json_decode($response);
 $currentTime = time();
 ?>
 
-<div class="weather">
+<style>
+    .temperature{
+        font-size: 18pt;
+        font-weight: 600;
+    }
+    .other_parameters{
+        font-size: 12pt;
+    }
+</style>
 
-    <div class="weather__time">
-    <?php echo date("jS F, Y",$currentTime); ?><br><?   //текущая дата
+
+    <?php 
             
             if($data->weather[0]->description=="облачно с прояснениями"){ // Облачность
-                ?> <img src="file/icons/weather/partly cloudy.jpg" width="20px"><?
+                ?> <img src="file/icons/weather/partly cloudy.png" width="30px"><?
             }else{
             echo ucwords($data->weather[0]->description); } 
             ?>
-        <?php echo $data->main->temp_max; ?>°C <br><!-- Температура -->
-    <img src="file/icons/weather/wett.png" width="20px"> <?php echo $data->main->humidity; ?> % <br><!-- Влажность -->
-    <img src="file/icons/weather/wind.png" width="20px"><?php echo $data->wind->speed; ?> км/ч<br><!-- Скорость ветра -->
+        <font class="temperature"><?php echo $data->main->temp_max; ?>°C </font> <br><!-- Температура -->
+   <font class="other_parameters"><img src="file/icons/weather/wett.png" width="20px"> <?php echo $data->main->humidity; ?> % <!-- Влажность -->
+    <img src="file/icons/weather/wind.png" width="20px"><?php echo $data->wind->speed; ?> м/с<br><!-- Скорость ветра --></font>
 
-</div>
+
