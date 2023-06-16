@@ -1,34 +1,14 @@
-<?php
-$apiKey = "72f259ba4f74e5a8d0cbdcebe3a564bd";
-$cityId = "542420";
-$apiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=ru&units=metric&APPID=" . $apiKey;
-$crequest = curl_init();
+<? 
+$data_file = 'http://export.yandex.ru/weather-ng/forecasts/'.$city.'.xml';    
+$xml = simplexml_load_file($data_file); 
 
-curl_setopt($crequest, CURLOPT_HEADER, 0);
-curl_setopt($crequest, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($crequest, CURLOPT_URL, $apiUrl);
-curl_setopt($crequest, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt($crequest, CURLOPT_VERBOSE, 0);
-curl_setopt($crequest, CURLOPT_SSL_VERIFYPEER, false);
-$response = curl_exec($crequest);
+$get_date = explode ("-" , $day['date']); 
+$day_of_week = date("N", mktime(0, 0, 0, $get_date[1], $get_date[2], $get_date[0]));
+ 
+$out[$counter]['day'] = $get_date[2];
+$out[$counter]['month'] = $get_date[1];
+$out[$counter]['year'] = $get_date[0];
+$out[$counter]['day_of_week'] = $day_of_the_week_array[$day_of_week]; 
 
-curl_close($crequest);
-$data = json_decode($response);
-$currentTime = time();
+
 ?>
-
-<div class="weather">
-
-    <div class="weather__time">
-    <?php echo date("jS F, Y",$currentTime); ?><br><?   //текущая дата
-            
-            if($data->weather[0]->description=="облачно с прояснениями"){ // Облачность
-                ?> <img src="file/icons/weather/partly cloudy.jpg" width="20px"><?
-            }else{
-            echo ucwords($data->weather[0]->description); } 
-            ?>
-        <?php echo $data->main->temp_max; ?>°C <br><!-- Температура -->
-    <img src="file/icons/weather/wett.png" width="20px"> <?php echo $data->main->humidity; ?> % <br><!-- Влажность -->
-    <img src="file/icons/weather/wind.png" width="20px"><?php echo $data->wind->speed; ?> км/ч<br><!-- Скорость ветра -->
-
-</div>
