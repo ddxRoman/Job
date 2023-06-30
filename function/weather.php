@@ -48,11 +48,17 @@ $currentTime = time();
                 
                 }   else{if($data->weather[0]->description=="переменная облачность"){
                     ?> <img src="../file/icons/weather/partly cloudy.png" width="30px"><?
+                }else{if($data->weather[0]->description=="ясно"){
+                    ?> <img src="../file/icons/weather/Sun.png" width="30px"><?
                 }else{
+                    if($data->weather[0]->description=="небольшая облачность"){
+                        ?> <img src="../file/icons/weather/littlBigCloud.png" width="30px"><?
+                }else
             echo ucwords($data->weather[0]->description); 
                 }
             }
         } 
+    }
             ?>
         <font class="temperature"><?php echo $temp; ?>°C </font> <br><!-- Температура -->
    <font class="other_parameters"><img src="file/icons/weather/wett.png" width="20px"> <?php echo $data->main->humidity; ?> % <!-- Влажность -->

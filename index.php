@@ -1,18 +1,12 @@
 <?
 require_once "function/checkaut.php";
-require_once "function/checkrole.php";
+// require_once "function/checkrole.php";
 require_once "action/connect.php";
 $bgColor=$_POST['bg'];
 $textColor=$_POST['txtColor']
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,8 +66,7 @@ $textColor=$_POST['txtColor']
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                     <a href="https://master-gadget.ru/" target="_sefl"><button class="site_btn">MG</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
-                    <a href="http://php/blocks/JS/index.html">JS Lesson</a>
-                    <a href="function/settings.php" target="1">Settings</a>
+                    <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><button >ГуглДиск</button></a><br>
                 </div>
                 
              </div>

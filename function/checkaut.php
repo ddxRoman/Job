@@ -3,12 +3,10 @@ session_start();
 
 if($_SESSION['user']){
 
-?>
 
-<?php
 }
-
 else {
+    echo "Chekout";
     header ('Location: action/autorization.php');
 }
 ?>
