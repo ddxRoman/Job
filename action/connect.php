@@ -1,6 +1,6 @@
 <?
 error_reporting(E_ERROR | E_PARSE);
-$connect = mysqli_connect('localhost', 'root','qazwsx','medcloud');
+$connect = mysqli_connect('localhost', 'root','','medcloud');
 if(!$connect){
   ?>   
    <style>
@@ -10,7 +10,6 @@ if(!$connect){
     </style><? 
 }
 else{ ?>
-
 <style>
 .header{
     border: 2px solid  rgb(57, 182, 67);

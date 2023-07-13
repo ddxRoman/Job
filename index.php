@@ -54,6 +54,10 @@ $textColor=$_POST['txtColor']
             <a href="https://vremya-dobryh.ru/" target="_blank"><button>Время Добрых</button></a>
             <a href="https://jira.bizonoff-dev.net/projects/KINDPEOPLE/" target="_blank"><button>Наша Жира</button></a>
             <a href="https://meet.google.com/" target="_blank"><button class="meet">Meet</button></a>
+            <a href="https://calendar.google.com/calendar/u/0/r?cid=medcloud.pro@gmail.com" target="_blank"><button>Календарь</button></a>
+            <a href="folders/countsymbolForm.php" target="1"><button>Подсчёт</button></a>
+            
+            
         </div><!-- Тут заканчивается МИС панель-->
         <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
        <div class="body">   <!-- Начало Тела сайта -->
@@ -65,15 +69,15 @@ $textColor=$_POST['txtColor']
                     <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                     <a href="https://master-gadget.ru/" target="_sefl"><button class="site_btn">MG</button></a><br>
+                    <a href="https://dartsite.ru/" target="_sefl"><button class="site_btn">DARK SITE</button></a><br>
+                    
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
-                    <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><button >ГуглДиск</button></a><br>
+                    <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><button>ГуглДиск</button></a><br>
                 </div>
-                
              </div>
             <div class="container">
                 <iframe name="1" src="">
                 </iframe>
-           
             </div>
             <?php if ($_SESSION['user']['status'] == 9) { ?><!-- Берем Роль пользователя и проверяем если она равно 9 (у нас это админ) то показываем Правое меню-->
                 <div class="rmenu">
@@ -91,7 +95,6 @@ $textColor=$_POST['txtColor']
         <div class="footer">
             <a href="Taskmanager/Test.php" target="_blank">
                 <div>
-
                 <?require_once 'function/weather.php';?>
                 </div>
             </a>
@@ -106,5 +109,4 @@ $textColor=$_POST['txtColor']
         </div>
     </div>
 </body>
-
 </html>
