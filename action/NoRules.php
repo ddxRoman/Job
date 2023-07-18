@@ -18,10 +18,11 @@ session_start();
 <div class="no_rules_choice">
     <div>
 
+    
+
     </div>
     <div>
     <a href="../index.php"><button class="no_rules">На главную</button></a>
-
 </div>
 <div class="relogin">
 <a href="logout.php"><button class="no_rules">Сменить аккаунт</button></a>
@@ -34,5 +35,4 @@ session_start();
     <img src="../file/icons/Block.png">
 </div>
 </body>
-
 </html>
