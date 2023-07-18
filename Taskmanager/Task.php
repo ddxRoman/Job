@@ -5,7 +5,6 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../css/styleaccordion.css">
     <link rel="stylesheet" type="text/css" href="../css/button.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../css/style_redesign.css"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Taskmanager</title>
@@ -42,13 +41,9 @@
                         <div class="accordion__body">
                             <form action="../action/statusTask.php?id=<?= $products[0] ?>" method="post" name="form"> <!-- форма с селектами-->
                                 <select name="currency" onchange="this.form.submit()">
-                                    <? //if ($product[3] == 0) { 
-                                    ?> <!-- Проверяем если статус задачи 1 то выводим Селект где первая запись Активный  -->
                                     <option value="0">Актуально</option>
                                     <option value="1">Выполнено</option>
                                     <option value="2">Не актуально</option>
-                                    <? //}
-                                    ?>
                                 </select>
                                 <a href="../action/editTask.php?id=<?= $products[0] ?>"><img width="16px" height="16px" title="Редактировать" src="../file/icons/edit.png"></a> <!-- Кнопка редактировать -->
                                 <select name="priority" onchange="this.form.submit()"><!-- Селект с сортировкой Статусов задач, выглядит как хуйня, надо переделать что бы тут был запрос и с запроса шел этот статус-->
@@ -143,7 +138,6 @@
                             <?
                         }  // Тут мы закрыли вторую проверку, на то статус 1 Закрыто 
                         else if ($products[3] == 2) { ?>
-
                                 <div style="background: linear-gradient(45deg, #7a7a22, #bdba64, #e3e3ac, #ffffe5);" class="accordion__header">
                                     <p class="number"> № <s> <?= $products[0]  ?> : </p>
                                     <p class="nametasks"><?= $products[1] ?></s></p>

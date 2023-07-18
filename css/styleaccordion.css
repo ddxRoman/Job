@@ -7,34 +7,33 @@ body {
   color: #000000;
   text-align: left;
 }
-
 *,
-*::before,
+ *::before,
 *::after {
   box-sizing: border-box;
 }
-
-.accordion__item {
+ .accordion__item {
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
 }
-
 .accordion__header {
-    margin-top: -15px;
+  margin-top: -15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.05rem;
   color: #fff;
-  font-weight: 500;
-  /* background-color: rgba(238, 192, 106, 0.507); */
-
-   cursor: pointer;
+  font-weight: 400;
+  font-size: calc(14px + 7 * (100vw / 1280));
+  cursor: pointer;
   transition: background-color 0.2s ease-out;
-  height: 25px;
-  border: 1px solid #8f802b ;
+  height: 18px;
+  border: 1px solid #8f802b ; 
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.accordion__header::after {
+ .accordion__header::after {
   flex-shrink: 0;
   width: 1.25rem;
   height: 25px;
@@ -44,50 +43,43 @@ body {
   background-size: 0.75rem;
   content: "";
   transition: transform 0.2s ease-out;
-}
+} 
 
 .accordion__item_show .accordion__header::after,
 .accordion__item_slidedown .accordion__header::after {
   transform: rotate(-180deg);
   color: #000000;
 }
-
 .accordion__header:hover {
   background-color: #ff0000;
-  height: 27px;
+  height: 30px;
+  border: 2px solid #ffd900;
+  font-size: 16pt;
+  font-weight: 600;
 }
-
 .accordion__item:not(.accordion__item_show) .accordion__header {
    border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem; 
 }
-
 .accordion__content {
   padding: 0.25rem 0.5rem;
   background: rgb(255, 255, 255);
-
 }
-
 .accordion__content_close {
   padding: 0.25rem 0.5rem;
   background: rgb(153, 153, 153);
-
 }
-
 .accordion__item:not(.accordion__item_show) .accordion__body {
   display: none;
 }
-
 .nametasks{
   color: #202020;
 }
-
 .number{
   color:#ffffff;
   font-size: 12px;
   font-weight: 600;
 }
-
 .taskheader{
   display: grid;
   justify-content: end;
@@ -101,7 +93,6 @@ body {
 form img{
   margin-left: 3px;
 }
-
 
 body::-webkit-scrollbar {
   width:3px;  /* ширина scrollbar */
@@ -131,8 +122,6 @@ body::-webkit-scrollbar-thumb {
   color: #1d1d1d;
   font-weight: 600;
 }
-
-            
               .prioritet-task0{
                 color: #4d4d4d;
                 font-weight: 400;

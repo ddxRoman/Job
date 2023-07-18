@@ -56,8 +56,6 @@ $textColor=$_POST['txtColor']
             <a href="https://meet.google.com/" target="_blank"><button class="meet">Meet</button></a>
             <a href="https://calendar.google.com/calendar/u/0/r?cid=medcloud.pro@gmail.com" target="_blank"><button>Календарь</button></a>
             <a href="folders/countsymbolForm.php" target="1"><button>Подсчёт</button></a>
-            
-            
         </div><!-- Тут заканчивается МИС панель-->
         <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
        <div class="body">   <!-- Начало Тела сайта -->
@@ -68,9 +66,8 @@ $textColor=$_POST['txtColor']
                     <a href="/folders/GooglFolders.php" target="1"><button>Папки</button></a><br>                   
                     <a href="folders/Backlog.php" target="1"><button>Старье</button></a><br>
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
-                    <a href="https://master-gadget.ru/" target="_sefl"><button class="site_btn">MG</button></a><br>
-                    <a href="https://dartsite.ru/" target="_sefl"><button class="site_btn">DARK SITE</button></a><br>
-                    
+                    <a href="https://master-gadget.ru/" target="_blank"><button class="site_btn">MG</button></a><br>
+                    <a href="https://dartsite.ru/" target="_blank"><button class="site_btn">DART SITE</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
                     <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><button>ГуглДиск</button></a><br>
                 </div>
@@ -99,7 +96,7 @@ $textColor=$_POST['txtColor']
                 </div>
             </a>
             <div class="refresh">
-            <p class="ink"><a href="Taskmanager/Todo/TodoList.php"><img src="file\icons\Logo.png" alt="test"></a><br>
+            <p class="ink"><a href="Test.php"><img src="file\icons\Logo.png" alt="test"></a><br>
                  ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p>
             </div>
             <div id="clock" class="clock">         
