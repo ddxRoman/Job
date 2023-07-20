@@ -53,7 +53,10 @@ $currentTime = time();
                 }else{
                     if($data->weather[0]->description=="небольшая облачность"){
                         ?> <img src="../file/icons/weather/littlBigCloud.png" width="30px"><?
-                }else
+                } else  if($data->weather[0]->description=="небольшой проливной дождь"){
+                    ?> <img src="../file/icons/weather/small_rain.png" width="30px"><?
+                }
+                else
             echo ucwords($data->weather[0]->description); 
                 }
             }
