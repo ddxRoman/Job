@@ -1,6 +1,5 @@
 <?
 require_once "function/checkaut.php";
-// require_once "function/checkrole.php";
 require_once "action/connect.php";
 $bgColor=$_POST['bg'];
 $textColor=$_POST['txtColor']
@@ -68,6 +67,7 @@ $textColor=$_POST['txtColor']
                     <a href="folders/mis.php" target="1"><button>Миски</button></a><br>
                     <a href="https://master-gadget.ru/" target="_blank"><button class="site_btn">MG</button></a><br>
                     <a href="https://dartsite.ru/" target="_blank"><button class="site_btn">DART SITE</button></a><br>
+                                        <a href="folders/sites.php" target="1"><button class="site_btn">Сайты</button></a><br>
                     <a href="https://docs.google.com/spreadsheets/d/1mFn7zDyJ47eAOvhSJ-e8eDeBEnwHVbKv/edit#gid=1585440672" target="_blank"><button class="document">МояДока</button></a><br>
                     <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><button>ГуглДиск</button></a><br>
                 </div>
@@ -96,7 +96,7 @@ $textColor=$_POST['txtColor']
                 </div>
             </a>
             <div class="refresh">
-            <p class="ink"><a href="Test.php"><img src="file\icons\Logo.png" alt="test"></a><br>
+            <p class="ink"><a href="http://php:81/index.php"><img src="file\icons\Logo.png" alt="test"></a><br>
                  ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p>
             </div>
             <div id="clock" class="clock">         
